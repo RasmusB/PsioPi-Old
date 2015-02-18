@@ -1,0 +1,6 @@
+*.000
+*bak
+*.net
+*~
+gerber/
+BOM/
