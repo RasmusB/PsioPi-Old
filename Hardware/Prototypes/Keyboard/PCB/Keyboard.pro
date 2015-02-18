@@ -1,4 +1,4 @@
-update=ons 28 jan 2015 22:33:20
+update=ons 18 feb 2015 20:32:49
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../../../common/kicad-libs/library/rbv
+LibDir=/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/library/rbv
 [eeschema/libraries]
 LibName1=rbv_adc
 LibName2=rbv_arduino
