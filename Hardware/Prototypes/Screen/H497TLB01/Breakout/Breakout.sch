@@ -1,0 +1,459 @@
+EESchema Schematic File Version 2
+LIBS:rbv_display
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L H497TLB01_V0 OLED1
+U 1 1 54E65174
+P 9950 2200
+F 0 "OLED1" H 9950 2300 60  0000 C CNN
+F 1 "H497TLB01_V0" H 9950 2200 60  0000 C CNN
+F 2 "SMD-Connectors:HIROSE_FH26-39S-0.3SHW(05)" H 9950 2200 60  0001 C CNN
+F 3 "" H 9950 2200 60  0000 C CNN
+	1    9950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L H497TLB01_V0 OLED1
+U 2 1 54E651AD
+P 6100 1950
+F 0 "OLED1" H 6100 2050 60  0000 C CNN
+F 1 "H497TLB01_V0" H 6100 1950 60  0000 C CNN
+F 2 "SMD-Connectors:HIROSE_FH26-39S-0.3SHW(05)" H 6100 1950 60  0001 C CNN
+F 3 "" H 6100 1950 60  0000 C CNN
+	2    6100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L H497TLB01_V0 OLED1
+U 3 1 54E651E0
+P 6100 4700
+F 0 "OLED1" H 6100 4800 60  0000 C CNN
+F 1 "H497TLB01_V0" H 6100 4700 60  0000 C CNN
+F 2 "SMD-Connectors:HIROSE_FH26-39S-0.3SHW(05)" H 6100 4700 60  0001 C CNN
+F 3 "" H 6100 4700 60  0000 C CNN
+	3    6100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 54E6534E
+P 10500 3250
+F 0 "#PWR01" H 10500 3000 60  0001 C CNN
+F 1 "GND" H 10500 3100 60  0000 C CNN
+F 2 "" H 10500 3250 60  0000 C CNN
+F 3 "" H 10500 3250 60  0000 C CNN
+	1    10500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2950 10500 3250
+Wire Wire Line
+	10400 3100 10400 2950
+Wire Wire Line
+	9400 3100 10500 3100
+Connection ~ 10500 3100
+Wire Wire Line
+	10300 2950 10300 3100
+Connection ~ 10400 3100
+Wire Wire Line
+	10200 2950 10200 3100
+Connection ~ 10300 3100
+Wire Wire Line
+	10100 2950 10100 3100
+Connection ~ 10200 3100
+Wire Wire Line
+	10000 2950 10000 3100
+Connection ~ 10100 3100
+Wire Wire Line
+	9900 2950 9900 3100
+Connection ~ 10000 3100
+Wire Wire Line
+	9800 2950 9800 3100
+Connection ~ 9900 3100
+Wire Wire Line
+	9700 2950 9700 3100
+Connection ~ 9800 3100
+Wire Wire Line
+	9600 2950 9600 3100
+Connection ~ 9700 3100
+Wire Wire Line
+	9500 2950 9500 3100
+Connection ~ 9600 3100
+Wire Wire Line
+	9400 2950 9400 3100
+Connection ~ 9500 3100
+Wire Wire Line
+	4600 5250 5500 5250
+Wire Wire Line
+	4600 5350 5500 5350
+Wire Wire Line
+	4600 5550 5500 5550
+Wire Wire Line
+	4600 5050 5500 5050
+Wire Wire Line
+	4600 4950 5500 4950
+$Comp
+L +BATT #PWR02
+U 1 1 54E6568A
+P 9350 1150
+F 0 "#PWR02" H 9350 1000 60  0001 C CNN
+F 1 "+BATT" H 9350 1290 60  0000 C CNN
+F 2 "" H 9350 1150 60  0000 C CNN
+F 3 "" H 9350 1150 60  0000 C CNN
+	1    9350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1150 9350 1450
+Wire Wire Line
+	9350 1300 9750 1300
+Wire Wire Line
+	9450 1300 9450 1450
+Connection ~ 9350 1300
+Wire Wire Line
+	9550 1300 9550 1450
+Connection ~ 9450 1300
+Wire Wire Line
+	9650 1300 9650 1450
+Connection ~ 9550 1300
+Wire Wire Line
+	9750 1300 9750 1450
+Connection ~ 9650 1300
+$Comp
+L +1V8 #PWR03
+U 1 1 54E6575F
+P 9950 1150
+F 0 "#PWR03" H 9950 1000 60  0001 C CNN
+F 1 "+1V8" H 9950 1290 60  0000 C CNN
+F 2 "" H 9950 1150 60  0000 C CNN
+F 3 "" H 9950 1150 60  0000 C CNN
+	1    9950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR04
+U 1 1 54E65A11
+P 10250 1150
+F 0 "#PWR04" H 10250 1000 60  0001 C CNN
+F 1 "+3V3" H 10250 1290 60  0000 C CNN
+F 2 "" H 10250 1150 60  0000 C CNN
+F 3 "" H 10250 1150 60  0000 C CNN
+	1    10250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V8 #PWR05
+U 1 1 54E65A23
+P 10550 1150
+F 0 "#PWR05" H 10550 1000 60  0001 C CNN
+F 1 "+1V8" H 10550 1290 60  0000 C CNN
+F 2 "" H 10550 1150 60  0000 C CNN
+F 3 "" H 10550 1150 60  0000 C CNN
+	1    10550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1150 9950 1450
+Wire Wire Line
+	10150 1450 10150 1300
+Wire Wire Line
+	10150 1300 10350 1300
+Wire Wire Line
+	10250 1300 10250 1150
+Wire Wire Line
+	10350 1300 10350 1450
+Connection ~ 10250 1300
+Wire Wire Line
+	10550 1150 10550 1450
+Wire Wire Line
+	4600 2800 5500 2800
+Wire Wire Line
+	4600 2900 5500 2900
+Wire Wire Line
+	4600 2600 5500 2600
+Wire Wire Line
+	4600 2500 5500 2500
+Text Label 4600 2500 0    60   ~ 0
+DSI_CK_P
+Text Label 4600 2600 0    60   ~ 0
+DSI_CK_N
+Text Label 4600 2800 0    60   ~ 0
+DSI_D0_P
+Text Label 4600 2900 0    60   ~ 0
+DSI_D0_N
+Wire Wire Line
+	4600 3100 5500 3100
+Wire Wire Line
+	4600 3200 5500 3200
+Text Label 4600 3100 0    60   ~ 0
+DSI_D1_P
+Text Label 4600 3200 0    60   ~ 0
+DSI_D1_N
+Wire Wire Line
+	4600 3400 5500 3400
+Wire Wire Line
+	4600 3500 5500 3500
+Text Label 4600 3400 0    60   ~ 0
+DSI_D2_P
+Text Label 4600 3500 0    60   ~ 0
+DSI_D2_N
+Wire Wire Line
+	4600 3700 5500 3700
+Wire Wire Line
+	4600 3800 5500 3800
+Text Label 4600 3700 0    60   ~ 0
+DSI_D3_P
+Text Label 4600 3800 0    60   ~ 0
+DSI_D3_N
+Wire Wire Line
+	4600 2300 5500 2300
+Wire Wire Line
+	4600 2200 5500 2200
+Text Label 4600 2200 0    60   ~ 0
+OLED_TE
+Text Label 4600 2300 0    60   ~ 0
+OLED_RESX
+Text Label 4600 4950 0    60   ~ 0
+TOUCH_RESX
+Text Label 4600 5050 0    60   ~ 0
+TOUCH_INT
+Text Label 4600 5250 0    60   ~ 0
+TOUCH_I2C_SDA
+Text Label 4600 5350 0    60   ~ 0
+TOUCH_I2C_SCL
+Text Label 4600 5550 0    60   ~ 0
+TOUCH_GPIO_A4
+$Comp
+L CONN_01X10 P2
+U 1 1 54E6613B
+P 1450 5400
+F 0 "P2" H 1450 5950 50  0000 C CNN
+F 1 "TOUCH SCREEN" V 1550 5400 50  0000 C CNN
+F 2 "Pin_Header_2.54mm:2x5-BOX_HEADER-TH-VERTICAL" H 1450 5400 60  0001 C CNN
+F 3 "" H 1450 5400 60  0000 C CNN
+	1    1450 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR06
+U 1 1 54E661EE
+P 1800 4800
+F 0 "#PWR06" H 1800 4650 60  0001 C CNN
+F 1 "+3V3" H 1800 4940 60  0000 C CNN
+F 2 "" H 1800 4800 60  0000 C CNN
+F 3 "" H 1800 4800 60  0000 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V8 #PWR07
+U 1 1 54E661F4
+P 2100 4800
+F 0 "#PWR07" H 2100 4650 60  0001 C CNN
+F 1 "+1V8" H 2100 4940 60  0000 C CNN
+F 2 "" H 2100 4800 60  0000 C CNN
+F 3 "" H 2100 4800 60  0000 C CNN
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4950 1800 4800
+Wire Wire Line
+	1650 5150 2100 5150
+Wire Wire Line
+	2100 5150 2100 4800
+Wire Wire Line
+	1800 4950 1650 4950
+$Comp
+L GND #PWR08
+U 1 1 54E66306
+P 1800 6000
+F 0 "#PWR08" H 1800 5750 60  0001 C CNN
+F 1 "GND" H 1800 5850 60  0000 C CNN
+F 2 "" H 1800 6000 60  0000 C CNN
+F 3 "" H 1800 6000 60  0000 C CNN
+	1    1800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5850 1800 5850
+Wire Wire Line
+	2550 5650 1650 5650
+Wire Wire Line
+	2550 5750 1650 5750
+Wire Wire Line
+	2550 5350 1650 5350
+Wire Wire Line
+	2550 5550 1650 5550
+Wire Wire Line
+	2550 5450 1650 5450
+Text Label 2550 5450 2    60   ~ 0
+TOUCH_RESX
+Text Label 2550 5550 2    60   ~ 0
+TOUCH_INT
+Text Label 2550 5650 2    60   ~ 0
+TOUCH_I2C_SDA
+Text Label 2550 5750 2    60   ~ 0
+TOUCH_I2C_SCL
+Text Label 2550 5350 2    60   ~ 0
+TOUCH_GPIO_A4
+Connection ~ 1800 5850
+Wire Wire Line
+	1650 5050 1800 5050
+Wire Wire Line
+	1800 5050 1800 6000
+Wire Wire Line
+	1650 5250 1800 5250
+Connection ~ 1800 5250
+$Comp
+L CONN_01X22 P1
+U 1 1 54E666A6
+P 1400 2600
+F 0 "P1" H 1400 3750 50  0000 C CNN
+F 1 "DISPLAY-RPi" V 1500 2600 50  0000 C CNN
+F 2 "SMD-Connectors:FPC_0.5mm_22p-MOLEX_52437" H 1400 2600 60  0001 C CNN
+F 3 "" H 1400 2600 60  0000 C CNN
+	1    1400 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 54E66796
+P 1750 3800
+F 0 "#PWR09" H 1750 3550 60  0001 C CNN
+F 1 "GND" H 1750 3650 60  0000 C CNN
+F 2 "" H 1750 3800 60  0000 C CNN
+F 3 "" H 1750 3800 60  0000 C CNN
+	1    1750 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3650 1750 3650
+Wire Wire Line
+	1600 3350 1750 3350
+Connection ~ 1750 3350
+Wire Wire Line
+	1600 3050 1750 3050
+Connection ~ 1750 3050
+Wire Wire Line
+	1600 2750 1750 2750
+Connection ~ 1750 2750
+Wire Wire Line
+	1600 2450 1750 2450
+Connection ~ 1750 2450
+Wire Wire Line
+	1600 2150 1750 2150
+Connection ~ 1750 2150
+Wire Wire Line
+	1600 1850 1750 1850
+Wire Wire Line
+	1750 1850 1750 3800
+$Comp
+L +3V3 #PWR010
+U 1 1 54E66B5E
+P 1750 1400
+F 0 "#PWR010" H 1750 1250 60  0001 C CNN
+F 1 "+3V3" H 1750 1540 60  0000 C CNN
+F 2 "" H 1750 1400 60  0000 C CNN
+F 3 "" H 1750 1400 60  0000 C CNN
+	1    1750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1550 1750 1400
+Wire Wire Line
+	1750 1550 1600 1550
+Wire Wire Line
+	2500 1650 1600 1650
+Wire Wire Line
+	2500 1750 1600 1750
+Text Label 2500 1650 2    60   ~ 0
+TOUCH_I2C_SDA
+Text Label 2500 1750 2    60   ~ 0
+TOUCH_I2C_SCL
+Wire Wire Line
+	2500 3450 1600 3450
+Wire Wire Line
+	2500 3550 1600 3550
+Wire Wire Line
+	2500 2950 1600 2950
+Wire Wire Line
+	2500 2850 1600 2850
+Text Label 2500 2850 2    60   ~ 0
+DSI_CK_P
+Text Label 2500 2950 2    60   ~ 0
+DSI_CK_N
+Text Label 2500 3450 2    60   ~ 0
+DSI_D0_P
+Text Label 2500 3550 2    60   ~ 0
+DSI_D0_N
+Wire Wire Line
+	2500 3150 1600 3150
+Wire Wire Line
+	2500 3250 1600 3250
+Text Label 2500 3150 2    60   ~ 0
+DSI_D1_P
+Text Label 2500 3250 2    60   ~ 0
+DSI_D1_N
+Wire Wire Line
+	2500 2550 1600 2550
+Wire Wire Line
+	2500 2650 1600 2650
+Text Label 2500 2550 2    60   ~ 0
+DSI_D2_P
+Text Label 2500 2650 2    60   ~ 0
+DSI_D2_N
+Wire Wire Line
+	2500 2250 1600 2250
+Wire Wire Line
+	2500 2350 1600 2350
+Text Label 2500 2250 2    60   ~ 0
+DSI_D3_P
+Text Label 2500 2350 2    60   ~ 0
+DSI_D3_N
+NoConn ~ 1600 2050
+NoConn ~ 1600 1950
+$EndSCHEMATC
