@@ -1,11 +1,9 @@
-update=tor 19 feb 2015 23:14:18
+update=lör 21 feb 2015 21:03:51
 version=1
 last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/library/rbv
@@ -61,3 +59,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[general]
+version=1

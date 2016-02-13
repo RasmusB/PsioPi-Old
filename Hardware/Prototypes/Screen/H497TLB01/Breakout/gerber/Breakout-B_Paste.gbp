@@ -1,0 +1,11 @@
+G04 #@! TF.FileFunction,Paste,Bot*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 0.201502211246+5439~21~ubuntu14.04.1-product) date lör 21 feb 2015 23:28:31*
+%MOMM*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.100000*%
+G04 APERTURE END LIST*
+D10*
+M02*
