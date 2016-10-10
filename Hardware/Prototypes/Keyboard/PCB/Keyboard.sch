@@ -814,7 +814,7 @@ Wire Bus Line
 	7300 2650 9500 2650
 Wire Bus Line
 	9500 2650 9500 4550
-Text Label 7150 4550 2    60   ~ 0
+Text Label 7150 4850 2    60   ~ 0
 ROW_01
 Text Label 7150 5050 2    60   ~ 0
 ROW_02
@@ -826,7 +826,7 @@ Text Label 7150 5250 2    60   ~ 0
 ROW_05
 Text Label 7150 4950 2    60   ~ 0
 ROW_06
-Text Label 7150 4850 2    60   ~ 0
+Text Label 7100 4550 2    60   ~ 0
 ROW_07
 Text Label 7150 4750 2    60   ~ 0
 ROW_08
@@ -1007,14 +1007,6 @@ Text Label 7050 2350 2    60   ~ 0
 TMP
 Wire Wire Line
 	7050 2350 6750 2350
-Text Label 9600 4750 0    60   ~ 0
-LED
-Wire Wire Line
-	9600 4850 10050 4850
-Text Label 9600 4850 0    60   ~ 0
-TMP
-Wire Wire Line
-	9600 4750 10050 4750
 $Comp
 L SW_PUSH SW1
 U 1 1 57F3F2B1
@@ -1042,4 +1034,22 @@ F 3 "" H 3250 2850 60  0000 C CNN
 	1    3250 2850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10050 4850 9850 4850
+Wire Wire Line
+	9850 4750 9850 4950
+$Comp
+L GND #PWR?
+U 1 1 57FBF30B
+P 9850 4950
+F 0 "#PWR?" H 9850 4700 50  0001 C CNN
+F 1 "GND" H 9850 4800 50  0000 C CNN
+F 2 "" H 9850 4950 50  0000 C CNN
+F 3 "" H 9850 4950 50  0000 C CNN
+	1    9850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4750 9850 4750
+Connection ~ 9850 4850
 $EndSCHEMATC
