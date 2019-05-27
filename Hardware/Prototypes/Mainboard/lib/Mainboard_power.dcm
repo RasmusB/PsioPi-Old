@@ -1,0 +1,48 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SYS_RTC_1P8V
+D Power flag, 1V8 supply
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD1_3P3V
+D Power flag, 3V3 supply
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD2_3P3V
+D Power flag, 3V3 supply
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD3_3P3V
+D Power flag, 3V3 supply
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD_1P8V
+D Power flag, 1V8 supply
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VOUT
+D Power flag, Vout
+K power-flag
+$ENDCMP
+#
+$CMP VDD_5V
+D Power flag, +5V
+K power-flag
+$ENDCMP
+#
+$CMP VDD_BAT
+D Power flag, Battery Voltage
+K power-flag
+$ENDCMP
+#
+$CMP VDD_USB_5V
+D Power flag, 5V from USB
+K power-flag
+$ENDCMP
+#
+#End Doc Library

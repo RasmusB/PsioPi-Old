@@ -1,0 +1,651 @@
+EESchema Schematic File Version 4
+LIBS:USB-Interface-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4050 1550 0    60   Input ~ 0
+EN
+Text HLabel 4050 2500 0    60   Input ~ 0
+VB
+Text HLabel 2000 4300 0    60   Input ~ 0
+VI
+Text HLabel 2000 4400 0    60   Input ~ 0
+D-
+Text HLabel 2000 4500 0    60   Input ~ 0
+D+
+Text HLabel 4050 3400 0    60   Input ~ 0
+ID
+Text HLabel 2000 4700 0    60   Input ~ 0
+GND
+Text Notes 800  4500 0    60   Italic 0
+Additional USB\npin header on\nPocketBeagle
+$Comp
+L power:GND #PWR?
+U 1 1 5A784995
+P 2650 4950
+F 0 "#PWR?" H 2650 4700 50  0001 C CNN
+F 1 "GND" H 2650 4800 50  0000 C CNN
+F 2 "" H 2650 4950 50  0001 C CNN
+F 3 "" H 2650 4950 50  0001 C CNN
+	1    2650 4950
+	1    0    0    -1  
+$EndComp
+Text HLabel 4050 1550 0    60   Input ~ 0
+EN
+Text HLabel 4050 2500 0    60   Input ~ 0
+VB
+Text HLabel 2000 4300 0    60   Input ~ 0
+VI
+Text HLabel 2000 4400 0    60   Input ~ 0
+D-
+Text HLabel 2000 4500 0    60   Input ~ 0
+D+
+Text HLabel 4050 3400 0    60   Input ~ 0
+ID
+Text HLabel 2000 4700 0    60   Input ~ 0
+GND
+Text Notes 800  4500 0    60   Italic 0
+Additional USB\npin header on\nPocketBeagle
+$Comp
+L power:GND #PWR?
+U 1 1 5A786D52
+P 2650 4950
+F 0 "#PWR?" H 2650 4700 50  0001 C CNN
+F 1 "GND" H 2650 4800 50  0000 C CNN
+F 2 "" H 2650 4950 50  0001 C CNN
+F 3 "" H 2650 4950 50  0001 C CNN
+	1    2650 4950
+	1    0    0    -1  
+$EndComp
+Text Label 4400 1550 0    50   ~ 0
+USB1.EN
+Text Label 4700 2500 2    50   ~ 0
+USB1.VB
+Text Label 2650 4300 2    50   ~ 0
+USB1.VI
+Text Label 2650 4400 2    50   ~ 0
+USB1.D-
+Text Label 2650 4500 2    50   ~ 0
+USB1.D+
+Text Label 4400 3400 0    50   ~ 0
+USB1.ID
+$Comp
+L conn:USB_C_Receptacle J?
+U 1 1 5A786D69
+P 9350 3800
+F 0 "J?" H 8950 5250 50  0000 L CNN
+F 1 "USB_C_Receptacle" H 9750 5250 50  0000 R CNN
+F 2 "" H 9500 3800 50  0001 C CNN
+F 3 "" H 9500 3800 50  0001 C CNN
+	1    9350 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A786EFE
+P 7700 2650
+F 0 "R?" H 7750 2700 50  0000 L CNN
+F 1 "900k" H 7750 2600 50  0000 L CNN
+F 2 "" H 7700 2650 50  0001 C CNN
+F 3 "" H 7700 2650 50  0001 C CNN
+	1    7700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_interface:TUSB320 U?
+U 1 1 5A7870DD
+P 6250 2700
+F 0 "U?" H 6250 2850 50  0000 C CNN
+F 1 "TUSB320" H 6250 2750 50  0000 C CNN
+F 2 "SMD-QFN:X2QFN-12" H 6250 2800 50  0001 C CNN
+F 3 "" H 6250 2800 50  0001 C CNN
+	1    6250 2700
+	1    0    0    -1  
+$EndComp
+Text Label 8050 2500 0    50   ~ 0
+USB1.VB
+Text Label 6900 2800 0    50   ~ 0
+USB1.VBUSDET
+Text Label 6900 3000 0    50   ~ 0
+USB1.CC1
+Text Label 6900 3100 0    50   ~ 0
+USB1.CC2
+NoConn ~ 8750 3800
+NoConn ~ 8750 3900
+NoConn ~ 8750 4100
+NoConn ~ 8750 4200
+NoConn ~ 8750 4400
+NoConn ~ 8750 4500
+NoConn ~ 8750 4700
+NoConn ~ 8750 4800
+NoConn ~ 8750 5000
+NoConn ~ 8750 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5A787724
+P 5400 4200
+F 0 "#PWR?" H 5400 3950 50  0001 C CNN
+F 1 "GND" H 5400 4050 50  0000 C CNN
+F 2 "" H 5400 4200 50  0001 C CNN
+F 3 "" H 5400 4200 50  0001 C CNN
+	1    5400 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A78772A
+P 5500 5400
+F 0 "#PWR?" H 5500 5150 50  0001 C CNN
+F 1 "GND" H 5500 5250 50  0000 C CNN
+F 2 "" H 5500 5400 50  0001 C CNN
+F 3 "" H 5500 5400 50  0001 C CNN
+	1    5500 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A787745
+P 9250 6100
+F 0 "#PWR?" H 9250 5850 50  0001 C CNN
+F 1 "GND" H 9250 5950 50  0000 C CNN
+F 2 "" H 9250 6100 50  0001 C CNN
+F 3 "" H 9250 6100 50  0001 C CNN
+	1    9250 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A78774B
+P 9250 6100
+F 0 "#PWR?" H 9250 5850 50  0001 C CNN
+F 1 "GND" H 9250 5950 50  0000 C CNN
+F 2 "" H 9250 6100 50  0001 C CNN
+F 3 "" H 9250 6100 50  0001 C CNN
+	1    9250 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L rbv_interface:TPD4S012 U?
+U 1 1 5A78AC45
+P 6050 5050
+F 0 "U?" H 6050 5300 60  0000 C CNN
+F 1 "TPD4S012" H 6050 4800 60  0000 C CNN
+F 2 "" H 6050 5250 60  0001 C CNN
+F 3 "" H 6050 5250 60  0001 C CNN
+	1    6050 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A78AE3B
+P 5500 5050
+F 0 "C?" H 5510 5120 50  0000 L CNN
+F 1 "0µ1" H 5510 4970 50  0000 L CNN
+F 2 "" H 5500 5050 50  0001 C CNN
+F 3 "" H 5500 5050 50  0001 C CNN
+	1    5500 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A78AEB1
+P 9650 5800
+F 0 "C?" H 9660 5870 50  0000 L CNN
+F 1 "C_Small" H 9660 5720 50  0000 L CNN
+F 2 "" H 9650 5800 50  0001 C CNN
+F 3 "" H 9650 5800 50  0001 C CNN
+	1    9650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A78AEDC
+P 9450 5800
+F 0 "R?" H 9480 5820 50  0000 L CNN
+F 1 "1M" H 9480 5760 50  0000 L CNN
+F 2 "" H 9450 5800 50  0001 C CNN
+F 3 "" H 9450 5800 50  0001 C CNN
+	1    9450 5800
+	-1   0    0    -1  
+$EndComp
+Text Notes 9750 6100 2    50   Italic 10
+Vaules TBD
+Text Label 7100 5150 2    50   ~ 0
+USB1.ID
+Text Label 7100 5050 2    50   ~ 0
+USB1.D-
+Text Label 7100 4950 2    50   ~ 0
+USB1.D+
+Text Label 6200 4600 2    50   ~ 0
+USB1.VB
+$Comp
+L rbv_interface:TPS2051BDGN U?
+U 1 1 5A796BB6
+P 6150 1500
+F 0 "U?" H 6150 2000 60  0000 C CNN
+F 1 "TPS2051BDGN" H 6150 1900 60  0000 C CNN
+F 2 "SMD-SO:SO8" H 6150 1850 60  0001 C CNN
+F 3 "" H 6150 1850 60  0001 C CNN
+	1    6150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_power:SYS_5V #PWR?
+U 1 1 5A796C19
+P 5350 1100
+F 0 "#PWR?" H 5350 950 60  0001 C CNN
+F 1 "SYS_5V" H 5350 1240 60  0000 C CNN
+F 2 "" H 5350 1100 60  0000 C CNN
+F 3 "" H 5350 1100 60  0000 C CNN
+	1    5350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5A796E42
+P 7100 1300
+F 0 "R?" H 7130 1320 50  0000 L CNN
+F 1 "0R" H 7130 1260 50  0000 L CNN
+F 2 "" H 7100 1300 50  0001 C CNN
+F 3 "" H 7100 1300 50  0001 C CNN
+	1    7100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A7993FF
+P 6100 2150
+F 0 "#PWR?" H 6100 1900 50  0001 C CNN
+F 1 "GND" H 6100 2000 50  0000 C CNN
+F 2 "" H 6100 2150 50  0001 C CNN
+F 3 "" H 6100 2150 50  0001 C CNN
+	1    6100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_power:VDD_3V3B #PWR?
+U 1 1 5A7995B9
+P 7100 1100
+F 0 "#PWR?" H 7100 950 60  0001 C CNN
+F 1 "VDD_3V3B" H 7100 1240 60  0000 C CNN
+F 2 "" H 7100 1100 60  0000 C CNN
+F 3 "" H 7100 1100 60  0000 C CNN
+	1    7100 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 1450 0    60   Italic 0
+Active ~OC~ condition\nwill reset the board\nby shorting 3V3B!
+$Comp
+L rbv_device:L L?
+U 1 1 5A79ADCF
+P 6950 2000
+F 0 "L?" V 7030 2000 50  0000 C CNN
+F 1 "150R 800mA" V 6850 2000 50  0000 C CNN
+F 2 "" V 6880 2000 30  0000 C CNN
+F 3 "" H 6950 2000 30  0000 C CNN
+	1    6950 2000
+	-1   0    0    -1  
+$EndComp
+Text Label 8250 3400 0    50   ~ 0
+USB1.D-
+Text Label 8250 3500 0    50   ~ 0
+USB1.D+
+$Comp
+L rbv_power:VDD_3V3B #PWR?
+U 1 1 5A79BC57
+P 7050 3600
+F 0 "#PWR?" H 7050 3450 60  0001 C CNN
+F 1 "VDD_3V3B" H 7050 3740 60  0000 C CNN
+F 2 "" H 7050 3600 60  0000 C CNN
+F 3 "" H 7050 3600 60  0000 C CNN
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5A79BD92
+P 7050 3700
+F 0 "C?" H 7060 3770 50  0000 L CNN
+F 1 "0µ1" H 7060 3620 50  0000 L CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2500 6950 2500
+Wire Wire Line
+	2000 4300 2650 4300
+Wire Wire Line
+	2000 4400 2650 4400
+Wire Wire Line
+	2000 4500 2650 4500
+Wire Wire Line
+	2000 4700 2650 4700
+Wire Wire Line
+	2650 4700 2650 4950
+Wire Wire Line
+	6850 2800 7700 2800
+Wire Wire Line
+	6850 3000 8750 3000
+Wire Wire Line
+	8750 3100 6850 3100
+Wire Wire Line
+	8150 3400 8650 3400
+Wire Wire Line
+	8250 3500 8650 3500
+Wire Wire Line
+	8750 3300 8650 3300
+Wire Wire Line
+	8650 3300 8650 3400
+Connection ~ 8650 3400
+Wire Wire Line
+	8750 3600 8650 3600
+Wire Wire Line
+	8650 3600 8650 3500
+Connection ~ 8650 3500
+Wire Wire Line
+	5650 4000 5400 4000
+Wire Wire Line
+	9250 5400 9250 5500
+Wire Wire Line
+	9350 5400 9350 5500
+Wire Wire Line
+	9250 5500 9350 5500
+Connection ~ 9450 5500
+Connection ~ 9350 5500
+Wire Wire Line
+	9550 5500 9550 5400
+Wire Wire Line
+	4050 3400 5650 3400
+Connection ~ 9250 5500
+Wire Wire Line
+	9450 5400 9450 5500
+Wire Wire Line
+	9250 6000 9450 6000
+Wire Wire Line
+	9450 6000 9450 5900
+Connection ~ 9250 6000
+Wire Wire Line
+	9650 6000 9650 5900
+Connection ~ 9450 6000
+Wire Wire Line
+	9450 5700 9450 5600
+Wire Wire Line
+	9450 5600 9650 5600
+Wire Wire Line
+	9650 5400 9650 5600
+Connection ~ 9650 5600
+Wire Notes Line
+	9300 6100 9750 6100
+Wire Notes Line
+	9750 5550 9300 5550
+Wire Notes Line
+	9300 5550 9300 6100
+Wire Notes Line
+	9750 6100 9750 5550
+Wire Wire Line
+	5650 5150 5500 5150
+Wire Wire Line
+	5500 4950 5650 4950
+Wire Wire Line
+	8250 4950 8250 3500
+Wire Wire Line
+	8150 5050 8150 3400
+Wire Wire Line
+	6450 4950 8250 4950
+Wire Wire Line
+	6450 5050 8150 5050
+Wire Wire Line
+	6450 5150 7100 5150
+Wire Wire Line
+	5500 5150 5500 5400
+Wire Wire Line
+	5500 4950 5500 4600
+Wire Wire Line
+	5500 4600 8050 4600
+Wire Wire Line
+	5350 1100 5350 1250
+Wire Wire Line
+	5350 1250 5650 1250
+Wire Wire Line
+	5350 1350 5650 1350
+Connection ~ 5350 1250
+Wire Wire Line
+	6950 1350 6650 1350
+Wire Wire Line
+	6950 1250 6650 1250
+Wire Wire Line
+	6950 1450 6650 1450
+Connection ~ 6950 1350
+Wire Wire Line
+	6650 1550 7100 1550
+Wire Wire Line
+	7100 1550 7100 1400
+Connection ~ 6950 1450
+Wire Wire Line
+	6100 2050 6100 2100
+Wire Wire Line
+	6100 2100 6200 2100
+Wire Wire Line
+	6200 2100 6200 2050
+Connection ~ 6100 2100
+Wire Wire Line
+	7100 1100 7100 1200
+Wire Notes Line
+	7000 1100 7000 1500
+Wire Notes Line
+	7000 1500 8300 1500
+Wire Notes Line
+	8300 1500 8300 1100
+Wire Notes Line
+	8300 1100 7000 1100
+Wire Wire Line
+	4050 1550 5650 1550
+Wire Wire Line
+	5400 3300 5400 4000
+Wire Wire Line
+	6950 1250 6950 1350
+Wire Wire Line
+	6950 2150 6950 2500
+Connection ~ 6950 2500
+Wire Wire Line
+	8750 2600 8650 2600
+Wire Wire Line
+	8650 2600 8650 2500
+Connection ~ 8650 2500
+Wire Wire Line
+	8750 2700 8550 2700
+Wire Wire Line
+	8550 2700 8550 2500
+Connection ~ 8550 2500
+Wire Wire Line
+	8050 2800 8450 2800
+Wire Wire Line
+	8450 2800 8450 2500
+Connection ~ 8450 2500
+Wire Wire Line
+	7700 2550 7700 2500
+Connection ~ 7700 2500
+Wire Wire Line
+	7700 2800 7700 2750
+Connection ~ 8450 2800
+Wire Wire Line
+	8050 4600 8050 2800
+$Comp
+L rbv_power:VDD_3V3B #PWR?
+U 1 1 5A79C289
+P 5400 2700
+F 0 "#PWR?" H 5400 2550 60  0001 C CNN
+F 1 "VDD_3V3B" H 5400 2840 60  0000 C CNN
+F 2 "" H 5400 2700 60  0000 C CNN
+F 3 "" H 5400 2700 60  0000 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2700 5400 2800
+Wire Wire Line
+	5400 2800 5650 2800
+$Comp
+L conn:GS3 J?
+U 1 1 5A79C490
+P 2950 2600
+F 0 "J?" H 3000 2800 50  0000 C CNN
+F 1 "PORT" H 3000 2401 50  0000 C CNN
+F 2 "Connectors:GS3" V 3038 2526 50  0001 C CNN
+F 3 "" H 2950 2600 50  0001 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_power:VDD_3V3B #PWR?
+U 1 1 5A79C5F9
+P 2700 2400
+F 0 "#PWR?" H 2700 2250 60  0001 C CNN
+F 1 "VDD_3V3B" H 2700 2540 60  0000 C CNN
+F 2 "" H 2700 2400 60  0000 C CNN
+F 3 "" H 2700 2400 60  0000 C CNN
+	1    2700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A79C679
+P 2700 2800
+F 0 "#PWR?" H 2700 2550 50  0001 C CNN
+F 1 "GND" H 2700 2650 50  0000 C CNN
+F 2 "" H 2700 2800 50  0001 C CNN
+F 3 "" H 2700 2800 50  0001 C CNN
+	1    2700 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2400 2700 2500
+Wire Wire Line
+	2700 2500 2800 2500
+Wire Wire Line
+	2700 2800 2700 2700
+Wire Wire Line
+	2700 2700 2800 2700
+$Comp
+L conn:GS3 J?
+U 1 1 5A79C8FB
+P 2950 3500
+F 0 "J?" H 3000 3700 50  0000 C CNN
+F 1 "ADDR" H 3000 3301 50  0000 C CNN
+F 2 "Connectors:GS3" V 3038 3426 50  0001 C CNN
+F 3 "" H 2950 3500 50  0001 C CNN
+	1    2950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_power:VDD_3V3B #PWR?
+U 1 1 5A79C901
+P 2700 3300
+F 0 "#PWR?" H 2700 3150 60  0001 C CNN
+F 1 "VDD_3V3B" H 2700 3440 60  0000 C CNN
+F 2 "" H 2700 3300 60  0000 C CNN
+F 3 "" H 2700 3300 60  0000 C CNN
+	1    2700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5A79C907
+P 2700 3700
+F 0 "#PWR?" H 2700 3450 50  0001 C CNN
+F 1 "GND" H 2700 3550 50  0000 C CNN
+F 2 "" H 2700 3700 50  0001 C CNN
+F 3 "" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3300 2700 3400
+Wire Wire Line
+	2700 3400 2800 3400
+Wire Wire Line
+	2700 3700 2700 3600
+Wire Wire Line
+	2700 3600 2800 3600
+Wire Wire Line
+	5650 3100 3400 3100
+Wire Wire Line
+	3400 3100 3400 3500
+Wire Wire Line
+	3400 3500 3100 3500
+Wire Wire Line
+	5650 3000 3400 3000
+Wire Wire Line
+	3400 3000 3400 2600
+Wire Wire Line
+	3400 2600 3100 2600
+Text Label 4400 3000 0    50   ~ 0
+TUSB.PORT_SEL
+Text Label 4400 3100 0    50   ~ 0
+TUSB.ADDR_SEL
+$Comp
+L power:GND #PWR?
+U 1 1 5A805212
+P 7050 3800
+F 0 "#PWR?" H 7050 3550 50  0001 C CNN
+F 1 "GND" H 7050 3650 50  0000 C CNN
+F 2 "" H 7050 3800 50  0001 C CNN
+F 3 "" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3300 5400 3300
+Connection ~ 5400 4000
+Wire Wire Line
+	8650 3400 8750 3400
+Wire Wire Line
+	8650 3500 8750 3500
+Wire Wire Line
+	9450 5500 9550 5500
+Wire Wire Line
+	9350 5500 9450 5500
+Wire Wire Line
+	9250 5500 9250 6000
+Wire Wire Line
+	9250 6000 9250 6100
+Wire Wire Line
+	9450 6000 9650 6000
+Wire Wire Line
+	9650 5600 9650 5700
+Wire Wire Line
+	5350 1250 5350 1350
+Wire Wire Line
+	6950 1350 6950 1450
+Wire Wire Line
+	6950 1450 6950 1850
+Wire Wire Line
+	6100 2100 6100 2150
+Wire Wire Line
+	6950 2500 7700 2500
+Wire Wire Line
+	8650 2500 8750 2500
+Wire Wire Line
+	8550 2500 8650 2500
+Wire Wire Line
+	8450 2500 8550 2500
+Wire Wire Line
+	7700 2500 8450 2500
+Wire Wire Line
+	8450 2800 8750 2800
+Wire Wire Line
+	5400 4000 5400 4200
+$EndSCHEMATC

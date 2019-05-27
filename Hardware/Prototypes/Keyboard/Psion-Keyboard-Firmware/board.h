@@ -9,27 +9,27 @@
 #define NROWS 8
 #define NCOLS 12
 
-#define ROW_01  0
-#define ROW_02  4
-#define ROW_03  8
-#define ROW_04  7
-#define ROW_05  6
-#define ROW_06  3
-#define ROW_07  2
-#define ROW_08  1
+#define ROW_01  22
+#define ROW_02  20
+#define ROW_03  5
+#define ROW_04  13
+#define ROW_05  18
+#define ROW_06  21
+#define ROW_07  7
+#define ROW_08  23
 
-#define COL_1   5
-#define COL_2   9
-#define COL_3   13
-#define COL_4   12
-#define COL_5   11
-#define COL_6   10
-#define COL_7   18
-#define COL_8   19
-#define COL_9   23
-#define COL_10  20
-#define COL_11  21
-#define COL_12  22
+#define COL_1   19
+#define COL_2   10
+#define COL_3   9
+#define COL_4   8
+#define COL_5   6
+#define COL_6   12
+#define COL_7   4
+#define COL_8   30
+#define COL_9   3
+#define COL_10  1
+#define COL_11  0
+#define COL_12  2
 
 int Rows [NROWS] = {
   ROW_01,
@@ -56,29 +56,3 @@ int Cols [NCOLS] = {
   COL_11,
   COL_12
 };
-
-
-// New mapping for the prototype
-/*
-#define ROW_01  0
-#define ROW_02  4
-#define ROW_03  8
-#define ROW_04  7
-#define ROW_05  6
-#define ROW_06  3
-#define ROW_07  2
-#define ROW_08  1
-
-#define COL_1   5
-#define COL_2   9
-#define COL_3   13
-#define COL_4   12
-#define COL_5   11
-#define COL_6   10
-#define COL_7   18
-#define COL_8   19
-#define COL_9   23
-#define COL_10  20
-#define COL_11  21
-#define COL_12  22
-*/

@@ -8,17 +8,19 @@
  */
 
 #include "board.h"
+#include "Keyboard.h"
 #include "PsionKeymapUSB.h"
 
-#define SERIAL_ENABLED 1
-#define KEYBOARD_ENABLED 0
+#define SERIAL_ENABLED 0
+#define KEYBOARD_ENABLED 1
 
 int keypressArrayCurrent [NROWS] [NCOLS];
 int keypressArrayPrevious [NROWS] [NCOLS];
 
 void setup() {
   
-  Serial.begin(9600);
+  if (SERIAL_ENABLED) Serial.begin(9600);
+  
   Keyboard.begin();  
   
   // Scanlines in high-Z (inactive) mode
@@ -113,17 +115,21 @@ void sendKeys ( int pressedArray [] [NCOLS], int previousArray [] [NCOLS] ) {
         
         if ( pressedArray[row][col] > previousArray[row][col] ) {
             
-              Serial.print(keyScancode[row][col], HEX);
-              Serial.println(" pressed");
+              if (SERIAL_ENABLED) {
+                Serial.print(keyScancode[row][col], HEX);
+                Serial.println(" pressed");
+              };
             
-            Keyboard.press_sc(keyScancode[row][col]);
+            Keyboard.press(keyScancode[row][col]);
         } 
         else if ( pressedArray[row][col] < previousArray[row][col] ) {
             
-            Serial.print(keyScancode[row][col], HEX);
-            Serial.println(" released");
+            if (SERIAL_ENABLED) {
+              Serial.print(keyScancode[row][col], HEX);
+              Serial.println(" released");
+            };
             
-            Keyboard.release_sc(keyScancode[row][col]);
+            Keyboard.release(keyScancode[row][col]);
             
         }
       }
