@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/rasmus/Dropbox/Projekt/Teknik/PsioPi/Hardware/Prototypes/Keyboard/PCB/Keyboard.sch</source>
-    <date>Tue 04 Oct 2016 08:42:02 PM CEST</date>
-    <tool>Eeschema 4.0.4+e1-6308~48~ubuntu14.04.1-stable</tool>
+    <date>Tue 21 Feb 2017 09:23:04 PM CET</date>
+    <tool>Eeschema no-vcs-found-7683~57~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -140,16 +140,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54DFF139</tstamp>
     </comp>
-    <comp ref="F1">
-      <value>500mA</value>
-      <footprint>SMD-DiscreteB:0603-1608</footprint>
-      <fields>
-        <field name="Farnell">1717227</field>
-      </fields>
-      <libsource lib="device" part="FUSE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>54DFFDA6</tstamp>
-    </comp>
     <comp ref="R3">
       <value>10k</value>
       <footprint>SMD-DiscreteB:R-0402-1005</footprint>
@@ -166,11 +156,12 @@
     </comp>
     <comp ref="P1">
       <value>USB_OTG</value>
-      <footprint>SMD-Connectors:USB-MICRO-MOLEX-47491-0001</footprint>
+      <footprint>SMD-Connectors:USB-MICRO-10104110-0001LF</footprint>
       <fields>
-        <field name="Farnell">1568025</field>
+        <field name="Farnell">2293753</field>
+        <field name="Mouser">649-10104110-0001LF</field>
       </fields>
-      <libsource lib="conn" part="USB_OTG"/>
+      <libsource lib="Keyboard-rescue" part="USB_OTG-RESCUE-Keyboard"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5727A357</tstamp>
     </comp>
@@ -191,7 +182,7 @@
     <comp ref="D1">
       <value>STATUS</value>
       <footprint>SMD-DiscreteB:LED-0402-1005</footprint>
-      <libsource lib="device" part="Led_Small"/>
+      <libsource lib="Keyboard-cache" part="Led_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57F3D0C3</tstamp>
     </comp>
@@ -203,14 +194,24 @@
       <tstamp>57F3D274</tstamp>
     </comp>
     <comp ref="SW1">
-      <value>RESET</value>
-      <footprint>SMD-Switches:KSR251GLFS</footprint>
+      <value>RST</value>
+      <footprint>SMD-Switches:ALPS-SKRMAAE010</footprint>
       <fields>
         <field name="Farnell">2376538</field>
       </fields>
-      <libsource lib="device" part="SW_PUSH"/>
+      <libsource lib="Keyboard-cache" part="SW_PUSH"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57F3F2B1</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>500mA</value>
+      <footprint>SMD-DiscreteB:F-0603-1608</footprint>
+      <fields>
+        <field name="Farnell">1717227</field>
+      </fields>
+      <libsource lib="Keyboard-cache" part="F_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58335A2B</tstamp>
     </comp>
   </components>
   <libparts>
@@ -285,11 +286,7 @@
     <libpart lib="device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
-        <fp>C?</fp>
-        <fp>C_????_*</fp>
-        <fp>C_????</fp>
-        <fp>SMD*_c</fp>
-        <fp>Capacitor*</fp>
+        <fp>C_*</fp>
       </footprints>
       <fields>
         <field name="Reference">C</field>
@@ -312,14 +309,18 @@
         <pin num="4" name="GND" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="FUSE">
+    <libpart lib="Keyboard-cache" part="F_Small">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
       <fields>
         <field name="Reference">F</field>
-        <field name="Value">FUSE</field>
+        <field name="Value">F_Small</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="input"/>
-        <pin num="2" name="~" type="input"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="rbv_keyboard" part="KEYBOARD-PSION-5MX">
@@ -352,8 +353,7 @@
         <pin num="22" name="NC" type="NotConnected"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Led_Small">
-      <description>Led</description>
+    <libpart lib="Keyboard-cache" part="Led_Small">
       <footprints>
         <fp>CP*</fp>
         <fp>SM*</fp>
@@ -371,7 +371,7 @@
       <description>Resistor</description>
       <footprints>
         <fp>R_*</fp>
-        <fp>Resistor_*</fp>
+        <fp>R_*</fp>
       </footprints>
       <fields>
         <field name="Reference">R</field>
@@ -383,9 +383,8 @@
       </pins>
     </libpart>
     <libpart lib="device" part="R_Small">
-      <description>Resistor</description>
+      <description>Resistor, small symbol</description>
       <footprints>
-        <fp>Resistor_*</fp>
         <fp>R_*</fp>
       </footprints>
       <fields>
@@ -397,8 +396,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="SW_PUSH">
-      <description>Button</description>
+    <libpart lib="Keyboard-cache" part="SW_PUSH">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SW_PUSH</field>
@@ -408,14 +406,13 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="USB_OTG">
-      <description>micro/mini connector</description>
+    <libpart lib="Keyboard-rescue" part="USB_OTG-RESCUE-Keyboard">
       <footprints>
         <fp>USB*</fp>
       </footprints>
       <fields>
         <field name="Reference">P</field>
-        <field name="Value">USB_OTG</field>
+        <field name="Value">USB_OTG-RESCUE-Keyboard</field>
       </fields>
       <pins>
         <pin num="1" name="VCC" type="power_out"/>
@@ -428,225 +425,228 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="Keyboard-rescue">
+      <uri>/home/rasmus/Dropbox/Projekt/Teknik/PsioPi/Hardware/Prototypes/Keyboard/PCB/Keyboard-rescue.lib</uri>
+    </library>
     <library logical="rbv_mcu">
       <uri>/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_mcu.lib</uri>
     </library>
-    <library logical="rbv_keyboard">
-      <uri>/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_keyboard.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
+    <library logical="Keyboard-cache">
+      <uri>/home/rasmus/Dropbox/Projekt/Teknik/PsioPi/Hardware/Prototypes/Keyboard/PCB/Keyboard-cache.lib</uri>
     </library>
     <library logical="rbv_device">
       <uri>/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_device.lib</uri>
     </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="rbv_keyboard">
+      <uri>/home/rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_keyboard.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="/VARef">
-      <node ref="U1" pin="42"/>
-      <node ref="C9" pin="1"/>
+    <net code="1" name="VBUS">
+      <node ref="F1" pin="1"/>
+      <node ref="P1" pin="1"/>
     </net>
-    <net code="2" name="/VUCap">
-      <node ref="C11" pin="1"/>
-      <node ref="U1" pin="6"/>
+    <net code="2" name="/MOSI">
+      <node ref="ISP1" pin="4"/>
+      <node ref="U1" pin="10"/>
     </net>
     <net code="3" name="/SCK">
       <node ref="U1" pin="9"/>
       <node ref="ISP1" pin="3"/>
     </net>
-    <net code="4" name="/RESET">
-      <node ref="U1" pin="13"/>
-      <node ref="R3" pin="2"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="ISP1" pin="5"/>
-    </net>
-    <net code="5" name="/MISO">
+    <net code="4" name="/MISO">
       <node ref="U1" pin="11"/>
       <node ref="ISP1" pin="1"/>
     </net>
-    <net code="6" name="Net-(R2-Pad1)">
-      <node ref="U1" pin="4"/>
-      <node ref="R2" pin="1"/>
+    <net code="5" name="/RESET">
+      <node ref="ISP1" pin="5"/>
+      <node ref="R3" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U1" pin="13"/>
     </net>
-    <net code="7" name="Net-(R1-Pad2)">
+    <net code="6" name="/VARef">
+      <node ref="C9" pin="1"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="7" name="/VUCap">
+      <node ref="C11" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="8" name="/ROW_01">
+      <node ref="KB1" pin="21"/>
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="10" name="/LED">
+      <node ref="U1" pin="12"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="11" name="GNDPWR">
+      <node ref="P1" pin="6"/>
+      <node ref="C12" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="12" name="/D+">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="13" name="/D-">
       <node ref="R1" pin="2"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="8" name="Net-(P1-Pad3)">
-      <node ref="R2" pin="2"/>
+    <net code="14" name="/BUS+">
       <node ref="P1" pin="3"/>
+      <node ref="R2" pin="2"/>
     </net>
-    <net code="9" name="Net-(P1-Pad2)">
-      <node ref="R1" pin="1"/>
+    <net code="15" name="/BUS-">
       <node ref="P1" pin="2"/>
+      <node ref="R1" pin="1"/>
     </net>
-    <net code="10" name="/MOSI">
-      <node ref="ISP1" pin="4"/>
-      <node ref="U1" pin="10"/>
-    </net>
-    <net code="11" name="GNDPWR">
-      <node ref="C12" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="P1" pin="6"/>
-    </net>
-    <net code="12" name="/LED">
-      <node ref="D1" pin="2"/>
-      <node ref="U1" pin="12"/>
-      <node ref="KB1" pin="1"/>
-    </net>
-    <net code="13" name="Net-(P1-Pad4)">
-      <node ref="P1" pin="4"/>
-    </net>
-    <net code="14" name="/TMP">
-      <node ref="U1" pin="8"/>
-      <node ref="KB1" pin="22"/>
-    </net>
-    <net code="15" name="GND">
-      <node ref="C5" pin="2"/>
-      <node ref="C11" pin="2"/>
+    <net code="16" name="GND">
+      <node ref="C8" pin="2"/>
+      <node ref="ISP1" pin="6"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U1" pin="45"/>
       <node ref="X1" pin="2"/>
       <node ref="U1" pin="35"/>
-      <node ref="U1" pin="45"/>
-      <node ref="C4" pin="2"/>
-      <node ref="U1" pin="5"/>
-      <node ref="U1" pin="15"/>
-      <node ref="U1" pin="43"/>
-      <node ref="ISP1" pin="6"/>
-      <node ref="C9" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="U1" pin="33"/>
-      <node ref="R5" pin="1"/>
       <node ref="U1" pin="23"/>
+      <node ref="U1" pin="33"/>
+      <node ref="U1" pin="43"/>
+      <node ref="X1" pin="4"/>
       <node ref="C6" pin="2"/>
-      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="KB1" pin="22"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U1" pin="5"/>
       <node ref="P1" pin="5"/>
       <node ref="C7" pin="2"/>
-      <node ref="C8" pin="2"/>
       <node ref="C1" pin="2"/>
+      <node ref="C11" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="C12" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="KB1" pin="1"/>
       <node ref="R4" pin="1"/>
-      <node ref="X1" pin="4"/>
-      <node ref="C10" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C2" pin="2"/>
     </net>
-    <net code="16" name="Net-(D1-Pad1)">
-      <node ref="R5" pin="2"/>
-      <node ref="D1" pin="1"/>
+    <net code="17" name="/TMP">
+      <node ref="U1" pin="8"/>
     </net>
-    <net code="17" name="/ROW_05">
-      <node ref="U1" pin="36"/>
-      <node ref="KB1" pin="15"/>
-    </net>
-    <net code="18" name="/COL_9">
-      <node ref="U1" pin="18"/>
-      <node ref="KB1" pin="2"/>
-    </net>
-    <net code="19" name="/COL_4">
-      <node ref="U1" pin="27"/>
-      <node ref="KB1" pin="9"/>
-    </net>
-    <net code="20" name="/COL_3">
-      <node ref="U1" pin="26"/>
-      <node ref="KB1" pin="8"/>
-    </net>
-    <net code="21" name="/COL_2">
-      <node ref="U1" pin="30"/>
+    <net code="18" name="/COL_2">
       <node ref="KB1" pin="12"/>
+      <node ref="U1" pin="30"/>
     </net>
-    <net code="22" name="/COL_1">
-      <node ref="KB1" pin="16"/>
-      <node ref="U1" pin="37"/>
+    <net code="19" name="/COL_8">
+      <node ref="KB1" pin="6"/>
+      <node ref="U1" pin="22"/>
     </net>
-    <net code="23" name="/COL_11">
-      <node ref="KB1" pin="5"/>
-      <node ref="U1" pin="21"/>
+    <net code="20" name="/COL_7">
+      <node ref="U1" pin="25"/>
+      <node ref="KB1" pin="7"/>
     </net>
-    <net code="24" name="/COL_10">
-      <node ref="KB1" pin="4"/>
-      <node ref="U1" pin="20"/>
+    <net code="21" name="/COL_6">
+      <node ref="KB1" pin="11"/>
+      <node ref="U1" pin="29"/>
     </net>
-    <net code="25" name="/COL_12">
-      <node ref="KB1" pin="3"/>
-      <node ref="U1" pin="19"/>
-    </net>
-    <net code="26" name="/ROW_08">
-      <node ref="KB1" pin="20"/>
-      <node ref="U1" pin="41"/>
-    </net>
-    <net code="27" name="/ROW_07">
-      <node ref="KB1" pin="19"/>
-      <node ref="U1" pin="40"/>
-    </net>
-    <net code="28" name="/ROW_06">
-      <node ref="KB1" pin="18"/>
-      <node ref="U1" pin="39"/>
-    </net>
-    <net code="29" name="/COL_5">
+    <net code="22" name="/COL_5">
       <node ref="U1" pin="28"/>
       <node ref="KB1" pin="10"/>
     </net>
-    <net code="30" name="/ROW_04">
+    <net code="23" name="/COL_9">
+      <node ref="KB1" pin="2"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="24" name="/COL_4">
+      <node ref="U1" pin="27"/>
+      <node ref="KB1" pin="9"/>
+    </net>
+    <net code="25" name="/COL_3">
+      <node ref="U1" pin="26"/>
+      <node ref="KB1" pin="8"/>
+    </net>
+    <net code="26" name="/COL_1">
+      <node ref="U1" pin="37"/>
+      <node ref="KB1" pin="16"/>
+    </net>
+    <net code="27" name="/COL_11">
+      <node ref="U1" pin="21"/>
+      <node ref="KB1" pin="5"/>
+    </net>
+    <net code="28" name="/COL_10">
+      <node ref="KB1" pin="4"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="29" name="/COL_12">
+      <node ref="U1" pin="19"/>
+      <node ref="KB1" pin="3"/>
+    </net>
+    <net code="30" name="/ROW_08">
+      <node ref="KB1" pin="20"/>
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="31" name="/ROW_07">
+      <node ref="U1" pin="1"/>
+      <node ref="KB1" pin="19"/>
+    </net>
+    <net code="32" name="/ROW_06">
+      <node ref="U1" pin="39"/>
+      <node ref="KB1" pin="18"/>
+    </net>
+    <net code="33" name="/ROW_05">
+      <node ref="U1" pin="36"/>
+      <node ref="KB1" pin="15"/>
+    </net>
+    <net code="34" name="/ROW_04">
       <node ref="U1" pin="32"/>
       <node ref="KB1" pin="14"/>
     </net>
-    <net code="31" name="/ROW_03">
+    <net code="35" name="/ROW_03">
       <node ref="U1" pin="31"/>
       <node ref="KB1" pin="13"/>
     </net>
-    <net code="32" name="/ROW_02">
+    <net code="36" name="/ROW_02">
       <node ref="U1" pin="38"/>
       <node ref="KB1" pin="17"/>
     </net>
-    <net code="33" name="/ROW_01">
-      <node ref="KB1" pin="21"/>
-      <node ref="U1" pin="1"/>
-    </net>
-    <net code="34" name="+5VD">
-      <node ref="F1" pin="1"/>
-      <node ref="P1" pin="1"/>
-    </net>
-    <net code="35" name="/COL_8">
-      <node ref="U1" pin="22"/>
-      <node ref="KB1" pin="6"/>
-    </net>
-    <net code="36" name="/COL_7">
-      <node ref="KB1" pin="7"/>
-      <node ref="U1" pin="25"/>
-    </net>
-    <net code="37" name="/COL_6">
-      <node ref="U1" pin="29"/>
-      <node ref="KB1" pin="11"/>
+    <net code="37" name="Net-(P1-Pad4)">
+      <node ref="P1" pin="4"/>
     </net>
     <net code="38" name="+5V">
-      <node ref="C7" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="F1" pin="2"/>
       <node ref="C2" pin="1"/>
       <node ref="C1" pin="1"/>
+      <node ref="C3" pin="1"/>
       <node ref="R3" pin="1"/>
+      <node ref="C7" pin="1"/>
       <node ref="ISP1" pin="2"/>
       <node ref="U1" pin="2"/>
-      <node ref="U1" pin="7"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U1" pin="44"/>
-      <node ref="U1" pin="34"/>
-      <node ref="U1" pin="24"/>
       <node ref="U1" pin="14"/>
+      <node ref="U1" pin="7"/>
+      <node ref="F1" pin="2"/>
+      <node ref="U1" pin="24"/>
+      <node ref="U1" pin="34"/>
+      <node ref="U1" pin="44"/>
       <node ref="C6" pin="1"/>
       <node ref="C5" pin="1"/>
+      <node ref="C4" pin="1"/>
     </net>
-    <net code="39" name="Net-(C10-Pad1)">
-      <node ref="U1" pin="17"/>
-      <node ref="C10" pin="1"/>
-      <node ref="X1" pin="3"/>
-    </net>
-    <net code="40" name="Net-(C8-Pad1)">
-      <node ref="U1" pin="16"/>
+    <net code="39" name="Net-(C8-Pad1)">
       <node ref="C8" pin="1"/>
       <node ref="X1" pin="1"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="40" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="X1" pin="3"/>
+      <node ref="U1" pin="17"/>
     </net>
   </nets>
 </export>

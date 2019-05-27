@@ -1,0 +1,304 @@
+EESchema Schematic File Version 4
+LIBS:Mainboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "SIP Clock, Analog, USB"
+Date "2019-02-08"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L osd3358-512m-bcb:OSD3358-512M-BCB U?
+U 2 1 5C6EFEEA
+P 4950 1350
+AR Path="/5C606351/5C6EFEEA" Ref="U?"  Part="2" 
+AR Path="/5C606351/5C6EFC81/5C6EFEEA" Ref="U?"  Part="2" 
+F 0 "U?" H 5950 1536 59  0000 C CNN
+F 1 "OSD3358-512M-BCB" H 5950 1431 59  0000 C CNN
+F 2 "" H 4900 450 50  0001 C CNN
+F 3 "" H 4900 450 50  0001 C CNN
+	2    4950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C6F10BA
+P 3900 1950
+AR Path="/5C606351/5C5DB93C/5C6F10BA" Ref="TP?"  Part="1" 
+AR Path="/5C606351/5C6EFC81/5C6F10BA" Ref="TP?"  Part="1" 
+F 0 "TP?" V 3900 2200 50  0000 C CNN
+F 1 "OSC_CTL" V 3900 2350 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4100 1950 50  0001 C CNN
+F 3 "~" H 4100 1950 50  0001 C CNN
+	1    3900 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 1950 4750 1950
+Text Label 4050 1950 0    50   ~ 0
+OSC_CTL
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5C6F1160
+P 3400 3450
+F 0 "Y?" V 3354 3362 50  0000 R CNN
+F 1 "32,768" V 3445 3362 50  0000 R CNN
+F 2 "" H 3400 3450 50  0001 C CNN
+F 3 "~" H 3400 3450 50  0001 C CNN
+	1    3400 3450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C6F1207
+P 3950 3450
+F 0 "R?" H 4009 3496 50  0000 L CNN
+F 1 "DNI" H 4009 3405 50  0000 L CNN
+F 2 "" H 3950 3450 50  0001 C CNN
+F 3 "~" H 3950 3450 50  0001 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C6F12A2
+P 3000 3150
+F 0 "C?" V 2771 3150 50  0000 C CNN
+F 1 "18pF" V 2862 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3000 3150 50  0001 C CNN
+F 3 "~" H 3000 3150 50  0001 C CNN
+	1    3000 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C6F131A
+P 3000 3750
+F 0 "C?" V 2771 3750 50  0000 C CNN
+F 1 "18pF" V 2862 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3000 3750 50  0001 C CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3950 2700 3950
+Wire Wire Line
+	2700 3950 2700 3750
+Wire Wire Line
+	2700 3750 2900 3750
+Wire Wire Line
+	2700 3750 2700 3150
+Wire Wire Line
+	2700 3150 2900 3150
+Connection ~ 2700 3750
+Wire Wire Line
+	3100 3150 3400 3150
+Wire Wire Line
+	3400 3150 3400 3350
+Wire Wire Line
+	3100 3750 3400 3750
+Wire Wire Line
+	3400 3750 3400 3550
+Wire Wire Line
+	3400 3750 3950 3750
+Wire Wire Line
+	3950 3750 3950 3550
+Connection ~ 3400 3750
+Wire Wire Line
+	3400 3150 3950 3150
+Wire Wire Line
+	3950 3150 3950 3350
+Connection ~ 3400 3150
+Wire Wire Line
+	3950 3150 4750 3150
+Connection ~ 3950 3150
+Wire Wire Line
+	4750 3750 3950 3750
+Connection ~ 3950 3750
+$Comp
+L Connector:USB_OTG J?
+U 1 1 5C6F3835
+P 1100 6850
+F 0 "J?" H 1155 7317 50  0000 C CNN
+F 1 "USB_OTG" H 1155 7226 50  0000 C CNN
+F 2 "" H 1250 6800 50  0001 C CNN
+F 3 " ~" H 1250 6800 50  0001 C CNN
+	1    1100 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_interface:TPD4S012 U?
+U 1 1 5C6F391A
+P 3250 6950
+F 0 "U?" H 3250 7337 60  0000 C CNN
+F 1 "TPD4S012" H 3250 7231 60  0000 C CNN
+F 2 "" H 3250 7150 60  0001 C CNN
+F 3 "doc/interface/tpd4s012.pdf" H 3250 7150 60  0001 C CNN
+	1    3250 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C6F397A
+P 3800 6950
+F 0 "C?" H 3708 6904 50  0000 R CNN
+F 1 "0u1" H 3708 6995 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3800 6950 50  0001 C CNN
+F 3 "~" H 3800 6950 50  0001 C CNN
+	1    3800 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C6F3A3C
+P 750 7500
+F 0 "#PWR?" H 750 7300 50  0001 C CNN
+F 1 "GNDPWR" H 754 7346 50  0000 C CNN
+F 2 "" H 750 7450 50  0001 C CNN
+F 3 "" H 750 7450 50  0001 C CNN
+	1    750  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6F3A85
+P 1100 7500
+F 0 "#PWR?" H 1100 7250 50  0001 C CNN
+F 1 "GND" H 1105 7327 50  0000 C CNN
+F 2 "" H 1100 7500 50  0001 C CNN
+F 3 "" H 1100 7500 50  0001 C CNN
+	1    1100 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 7500 1100 7250
+Wire Wire Line
+	1000 7250 1000 7400
+Wire Wire Line
+	1000 7400 750  7400
+Wire Wire Line
+	750  7400 750  7500
+Wire Wire Line
+	1400 6850 2350 6850
+Wire Wire Line
+	2850 6950 2250 6950
+Wire Wire Line
+	1400 7050 2450 7050
+$Comp
+L Mainboard_power:VDD_USB_5V #PWR?
+U 1 1 5C6F476F
+P 3800 6650
+F 0 "#PWR?" H 3800 6500 50  0001 C CNN
+F 1 "VDD_USB_5V" H 3815 6823 50  0000 C CNN
+F 2 "" H 3800 6650 50  0001 C CNN
+F 3 "" H 3800 6650 50  0001 C CNN
+	1    3800 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6F479C
+P 3800 7250
+F 0 "#PWR?" H 3800 7000 50  0001 C CNN
+F 1 "GND" H 3805 7077 50  0000 C CNN
+F 2 "" H 3800 7250 50  0001 C CNN
+F 3 "" H 3800 7250 50  0001 C CNN
+	1    3800 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 7250 3800 7050
+Wire Wire Line
+	3800 7050 3650 7050
+Connection ~ 3800 7050
+Wire Wire Line
+	3650 6850 3800 6850
+Wire Wire Line
+	3800 6650 3800 6850
+Connection ~ 3800 6850
+$Comp
+L rbv_device:L FB?
+U 1 1 5C6F5355
+P 1750 6650
+F 0 "FB?" V 1543 6650 50  0000 C CNN
+F 1 "150R 800mA" V 1634 6650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1650 6650 30  0001 C CNN
+F 3 "" H 1750 6650 30  0000 C CNN
+	1    1750 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 6650 1600 6650
+Wire Wire Line
+	1900 6650 2150 6650
+Wire Wire Line
+	2150 6650 2150 5350
+Wire Wire Line
+	2250 6950 2250 5450
+Wire Wire Line
+	2250 5450 4750 5450
+Connection ~ 2250 6950
+Wire Wire Line
+	2250 6950 1400 6950
+Wire Wire Line
+	2350 6850 2350 5550
+Wire Wire Line
+	2350 5550 4750 5550
+Connection ~ 2350 6850
+Wire Wire Line
+	2350 6850 2850 6850
+Wire Wire Line
+	2450 5650 2450 7050
+Connection ~ 2450 7050
+Wire Wire Line
+	2450 7050 2850 7050
+NoConn ~ 4750 5750
+NoConn ~ 4750 5850
+Wire Wire Line
+	2450 5650 4750 5650
+Text Label 3850 5550 0    50   ~ 0
+USB0_DP
+Text Label 3850 5450 0    50   ~ 0
+USB0_DM
+Text Label 3850 5650 0    50   ~ 0
+USB0_ID
+$Comp
+L Mainboard_power:VDD_USB_5V #PWR?
+U 1 1 5C6F8931
+P 2150 5000
+F 0 "#PWR?" H 2150 4850 50  0001 C CNN
+F 1 "VDD_USB_5V" H 2165 5173 50  0000 C CNN
+F 2 "" H 2150 5000 50  0001 C CNN
+F 3 "" H 2150 5000 50  0001 C CNN
+	1    2150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L rbv_device:L FB?
+U 1 1 5C6F8950
+P 3500 5350
+F 0 "FB?" V 3293 5350 50  0000 C CNN
+F 1 "0R5" V 3384 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3400 5350 30  0001 C CNN
+F 3 "" H 3500 5350 30  0000 C CNN
+	1    3500 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 5000 2150 5350
+Wire Wire Line
+	2150 5350 3350 5350
+Connection ~ 2150 5350
+Wire Wire Line
+	3650 5350 4750 5350
+Text Label 3850 5350 0    50   ~ 0
+USB0_VBUS
+$EndSCHEMATC

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name aliexpress_display)(type Legacy)(uri ${KIPRJMOD}/aliexpress_display.lib)(options "")(descr ""))
+  (lib (name rbv_connectors)(type Legacy)(uri C:/Users/Rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_connectors.lib)(options "")(descr ""))
+  (lib (name rbv_display)(type Legacy)(uri C:/Users/Rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_display.lib)(options "")(descr ""))
+  (lib (name rbv_interface)(type Legacy)(uri C:/Users/Rasmus/Dropbox/Projekt/Teknik/common/kicad-libs/rb-lib/rbv_interface.lib)(options "")(descr ""))
+)
