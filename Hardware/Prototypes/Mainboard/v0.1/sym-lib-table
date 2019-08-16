@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OSD3358-512M-BCB)(type Legacy)(uri ${KIPRJMOD}/OSD3358-512M-BCB.lib)(options "")(descr ""))
+)
