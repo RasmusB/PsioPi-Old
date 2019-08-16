@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name OSD3358-512M-BCB)(type Legacy)(uri ${KIPRJMOD}/lib/OSD3358-512M-BCB.lib)(options "")(descr ""))
+  (lib (name OSD3358-POWER)(type Legacy)(uri ${KIPRJMOD}/lib/OSD3358-POWER.lib)(options "")(descr ""))
 )

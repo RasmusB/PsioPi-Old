@@ -1,0 +1,1123 @@
+EESchema Schematic File Version 4
+LIBS:Mainboard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 2
+Title "Power Supplies"
+Date "2019-08-16"
+Rev ""
+Comp "Rasmus Backman"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OSD3358-512M-BCB:OSD3358-512M-BCB U?
+U 1 1 5D5D3D22
+P 3850 9750
+AR Path="/5D5D3D22" Ref="U?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D22" Ref="U1"  Part="1" 
+F 0 "U1" H 5050 18117 50  0000 C CNN
+F 1 "OSD3358-512M-BCB" H 5050 18026 50  0000 C CNN
+F 2 "OSD3358-512M-BCB:OSD335X-BGA-400" H 3850 9450 50  0001 L BNN
+F 3 "" H 3850 9400 50  0001 L BNN
+	1    3850 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1750 3100 1750
+Wire Wire Line
+	3650 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 1750
+Connection ~ 3450 1750
+Wire Wire Line
+	3450 1750 3650 1750
+Wire Wire Line
+	3650 1950 3450 1950
+Wire Wire Line
+	3450 1950 3450 1850
+Connection ~ 3450 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5D5D3D37
+P 2350 2100
+AR Path="/5D5D3D37" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D37" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2350 1850 50  0001 C CNN
+F 1 "GND" H 2355 1927 50  0000 C CNN
+F 2 "" H 2350 2100 50  0001 C CNN
+F 3 "" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1950 2350 2100
+Wire Wire Line
+	3650 2350 3450 2350
+Wire Wire Line
+	3650 2450 3450 2450
+Wire Wire Line
+	3450 2450 3450 2350
+Wire Wire Line
+	3650 2550 3450 2550
+Wire Wire Line
+	3450 2550 3450 2450
+Connection ~ 3450 2450
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D5D3D76
+P 1750 2950
+AR Path="/5D5D3D76" Ref="J?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D76" Ref="J2"  Part="1" 
+F 0 "J2" H 1858 3131 50  0000 C CNN
+F 1 "LiPo" H 1858 3040 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 1750 2950 50  0001 C CNN
+F 3 "~" H 1750 2950 50  0001 C CNN
+	1    1750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2950 3450 3050
+Wire Wire Line
+	3450 3050 3650 3050
+Wire Wire Line
+	3450 2950 3650 2950
+Wire Wire Line
+	3650 3150 3450 3150
+Wire Wire Line
+	3450 3150 3450 3050
+Connection ~ 3450 3050
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 5D5D3D84
+P 1750 3550
+AR Path="/5D5D3D84" Ref="J?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D84" Ref="J3"  Part="1" 
+F 0 "J3" H 1642 3325 50  0000 C CNN
+F 1 "BAT_V" H 1642 3416 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 1750 3550 50  0001 C CNN
+F 3 "~" H 1750 3550 50  0001 C CNN
+	1    1750 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 5D5D3D8A
+P 1750 3850
+AR Path="/5D5D3D8A" Ref="J?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D8A" Ref="J4"  Part="1" 
+F 0 "J4" H 1642 3625 50  0000 C CNN
+F 1 "BAT_T" H 1642 3716 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 1750 3850 50  0001 C CNN
+F 3 "~" H 1750 3850 50  0001 C CNN
+	1    1750 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 3550 3100 3550
+Wire Wire Line
+	3450 3550 3450 3350
+Wire Wire Line
+	3450 3350 3650 3350
+Wire Wire Line
+	1950 3850 2800 3850
+Wire Wire Line
+	3550 3850 3550 3450
+Wire Wire Line
+	3550 3450 3650 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5D5D3D96
+P 2050 3050
+AR Path="/5D5D3D96" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C5718/5D5D3D96" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 2050 2800 50  0001 C CNN
+F 1 "GND" H 2055 2877 50  0000 C CNN
+F 2 "" H 2050 3050 50  0001 C CNN
+F 3 "" H 2050 3050 50  0001 C CNN
+	1    2050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3050 2050 3050
+$Comp
+L OSD3358-POWER:VIN_AC #PWR08
+U 1 1 5D5EFCF6
+P 3450 1700
+F 0 "#PWR08" H 3450 1550 50  0001 C CNN
+F 1 "VIN_AC" H 3465 1873 50  0000 C CNN
+F 2 "" H 3450 1700 50  0001 C CNN
+F 3 "" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1700 3450 1750
+$Comp
+L OSD3358-POWER:VIN_USB #PWR09
+U 1 1 5D5F1596
+P 3450 2300
+F 0 "#PWR09" H 3450 2150 50  0001 C CNN
+F 1 "VIN_USB" H 3465 2473 50  0000 C CNN
+F 2 "" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	1    3450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2300 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	1950 2950 3100 2950
+Connection ~ 3450 2950
+$Comp
+L OSD3358-POWER:VIN_BAT #PWR010
+U 1 1 5D5F4C92
+P 3450 2900
+F 0 "#PWR010" H 3450 2750 50  0001 C CNN
+F 1 "VIN_BAT" H 3465 3073 50  0000 C CNN
+F 2 "" H 3450 2900 50  0001 C CNN
+F 3 "" H 3450 2900 50  0001 C CNN
+	1    3450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2900 3450 2950
+Wire Wire Line
+	2250 1950 2350 1950
+$Comp
+L Connector:Barrel_Jack J5
+U 1 1 5D601962
+P 1950 1850
+F 0 "J5" H 2007 2175 50  0000 C CNN
+F 1 "+5V" H 2007 2084 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 2000 1810 50  0001 C CNN
+F 3 "~" H 2000 1810 50  0001 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5D60FF47
+P 2600 1950
+F 0 "R1" V 2700 1950 50  0000 C CNN
+F 1 "0.1, 5%" V 2500 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 1950 50  0001 C CNN
+F 3 "~" H 2600 1950 50  0001 C CNN
+	1    2600 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OSD3358-POWER:CGND #PWR07
+U 1 1 5D611015
+P 2850 2100
+F 0 "#PWR07" H 2850 1900 50  0001 C CNN
+F 1 "CGND" H 2854 1946 50  0000 C CNN
+F 2 "" H 2850 2050 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1950 2350 1950
+Connection ~ 2350 1950
+Wire Wire Line
+	2700 1950 2850 1950
+Wire Wire Line
+	2850 1950 2850 2100
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D612A9A
+P 3100 1700
+F 0 "TP3" H 3100 2000 50  0000 C CNN
+F 1 "VIN_AC" H 3100 1900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3300 1700 50  0001 C CNN
+F 3 "~" H 3300 1700 50  0001 C CNN
+	1    3100 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 1750
+Wire Wire Line
+	3100 1750 3450 1750
+Wire Wire Line
+	3100 1750 3100 1700
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D61430A
+P 3100 2300
+F 0 "TP4" H 3100 2600 50  0000 C CNN
+F 1 "VIN_USB" H 3100 2500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3300 2300 50  0001 C CNN
+F 3 "~" H 3300 2300 50  0001 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2300 3100 2350
+Wire Wire Line
+	3100 2350 3450 2350
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D6163B3
+P 3100 2900
+F 0 "TP5" H 3100 3200 50  0000 C CNN
+F 1 "VIN_BAT" H 3100 3100 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3300 2900 50  0001 C CNN
+F 3 "~" H 3300 2900 50  0001 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2900 3100 2950
+Connection ~ 3100 2950
+Wire Wire Line
+	3100 2950 3450 2950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D617341
+P 1500 1700
+F 0 "TP1" H 1500 2000 50  0000 C CNN
+F 1 "GND" H 1500 1900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 1700 1700 50  0001 C CNN
+F 3 "~" H 1700 1700 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D618328
+P 1500 2100
+AR Path="/5D618328" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C5718/5D618328" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 1500 1850 50  0001 C CNN
+F 1 "GND" H 1505 1927 50  0000 C CNN
+F 2 "" H 1500 2100 50  0001 C CNN
+F 3 "" H 1500 2100 50  0001 C CNN
+	1    1500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1700 1500 2100
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D61D2C0
+P 3100 3500
+F 0 "TP6" H 3100 3800 50  0000 C CNN
+F 1 "BAT_V" H 3100 3700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3300 3500 50  0001 C CNN
+F 3 "~" H 3300 3500 50  0001 C CNN
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D61D650
+P 2800 3500
+F 0 "TP2" H 2800 3800 50  0000 C CNN
+F 1 "BAT_T" H 2800 3700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3000 3500 50  0001 C CNN
+F 3 "~" H 3000 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3550 3100 3500
+Connection ~ 3100 3550
+Wire Wire Line
+	3100 3550 3450 3550
+Wire Wire Line
+	2800 3500 2800 3850
+Connection ~ 2800 3850
+Wire Wire Line
+	2800 3850 3550 3850
+$Comp
+L OSD3358-POWER:SYS_VDD3_3P3V #PWR012
+U 1 1 5D641D9A
+P 7250 5250
+F 0 "#PWR012" H 7250 5100 50  0001 C CNN
+F 1 "SYS_VDD3_3P3V" H 7265 5423 50  0000 C CNN
+F 2 "" H 7250 5250 50  0001 C CNN
+F 3 "" H 7250 5250 50  0001 C CNN
+	1    7250 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6050 6550 6050
+Wire Wire Line
+	6550 6050 6550 5950
+Wire Wire Line
+	6450 5350 6550 5350
+Wire Wire Line
+	6550 5350 6800 5350
+Wire Wire Line
+	7250 5350 7250 5250
+Connection ~ 6550 5350
+Wire Wire Line
+	6450 5450 6550 5450
+Connection ~ 6550 5450
+Wire Wire Line
+	6550 5450 6550 5350
+Wire Wire Line
+	6450 5550 6550 5550
+Connection ~ 6550 5550
+Wire Wire Line
+	6550 5550 6550 5450
+Wire Wire Line
+	6450 5650 6550 5650
+Connection ~ 6550 5650
+Wire Wire Line
+	6550 5650 6550 5550
+Wire Wire Line
+	6450 5750 6550 5750
+Connection ~ 6550 5750
+Wire Wire Line
+	6550 5750 6550 5650
+Wire Wire Line
+	6450 5850 6550 5850
+Connection ~ 6550 5850
+Wire Wire Line
+	6550 5850 6550 5750
+Wire Wire Line
+	6450 5950 6550 5950
+Connection ~ 6550 5950
+Wire Wire Line
+	6550 5950 6550 5850
+Wire Wire Line
+	6450 6950 6550 6950
+Connection ~ 6550 6050
+Wire Wire Line
+	6450 6750 6550 6750
+Connection ~ 6550 6750
+Wire Wire Line
+	6550 6750 6550 6650
+Wire Wire Line
+	6450 6650 6550 6650
+Connection ~ 6550 6650
+Wire Wire Line
+	6550 6650 6550 6550
+Wire Wire Line
+	6450 6550 6550 6550
+Connection ~ 6550 6550
+Wire Wire Line
+	6550 6550 6550 6450
+Wire Wire Line
+	6450 6450 6550 6450
+Connection ~ 6550 6450
+Wire Wire Line
+	6550 6450 6550 6050
+Wire Wire Line
+	6550 6750 6550 6950
+Wire Wire Line
+	6450 7350 6550 7350
+Wire Wire Line
+	7250 7350 7250 7250
+Wire Wire Line
+	6450 8250 6550 8250
+Wire Wire Line
+	6550 8250 6550 8150
+Connection ~ 6550 7350
+Wire Wire Line
+	6550 7350 6650 7350
+Wire Wire Line
+	6450 8150 6550 8150
+Connection ~ 6550 8150
+Wire Wire Line
+	6550 8150 6550 8050
+Wire Wire Line
+	6550 8050 6450 8050
+Connection ~ 6550 8050
+Wire Wire Line
+	6550 8050 6550 7950
+Wire Wire Line
+	6450 7950 6550 7950
+Connection ~ 6550 7950
+Wire Wire Line
+	6550 7950 6550 7850
+Wire Wire Line
+	6550 7850 6450 7850
+Connection ~ 6550 7850
+Wire Wire Line
+	6550 7850 6550 7750
+Wire Wire Line
+	6450 7750 6550 7750
+Connection ~ 6550 7750
+Wire Wire Line
+	6550 7750 6550 7650
+Wire Wire Line
+	6550 7650 6450 7650
+Connection ~ 6550 7650
+Wire Wire Line
+	6550 7650 6550 7550
+Wire Wire Line
+	6450 7550 6550 7550
+Connection ~ 6550 7550
+Wire Wire Line
+	6550 7550 6550 7450
+Wire Wire Line
+	6550 7450 6450 7450
+Connection ~ 6550 7450
+Wire Wire Line
+	6550 7450 6550 7350
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D66D754
+P 6800 5350
+F 0 "TP8" H 6800 5650 50  0000 C CNN
+F 1 "VDD3_3P3V" H 6800 5550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7000 5350 50  0001 C CNN
+F 3 "~" H 7000 5350 50  0001 C CNN
+	1    6800 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 5350
+Wire Wire Line
+	6800 5350 7250 5350
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5D66E10B
+P 6850 7350
+F 0 "TP9" H 6850 7650 50  0000 C CNN
+F 1 "VDD_1P8V" H 6850 7550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7050 7350 50  0001 C CNN
+F 3 "~" H 7050 7350 50  0001 C CNN
+	1    6850 7350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 7350
+Wire Wire Line
+	6850 7350 7250 7350
+Wire Wire Line
+	6450 6850 6650 6850
+Wire Wire Line
+	6650 6850 6650 7350
+Connection ~ 6650 7350
+Wire Wire Line
+	6650 7350 6850 7350
+Wire Wire Line
+	6450 8650 6550 8650
+Wire Wire Line
+	6550 8650 6550 9250
+Wire Wire Line
+	6550 9550 6450 9550
+Wire Wire Line
+	6450 9450 6550 9450
+Connection ~ 6550 9450
+Wire Wire Line
+	6550 9450 6550 9550
+Wire Wire Line
+	6550 9350 6450 9350
+Connection ~ 6550 9350
+Wire Wire Line
+	6550 9350 6550 9450
+Wire Wire Line
+	6450 9250 6550 9250
+Connection ~ 6550 9250
+Wire Wire Line
+	6550 9250 6550 9350
+$Comp
+L OSD3358-POWER:SYS_RTC_1P8V #PWR014
+U 1 1 5D688E3C
+P 7250 9150
+F 0 "#PWR014" H 7250 9000 50  0001 C CNN
+F 1 "SYS_RTC_1P8V" H 7265 9323 50  0000 C CNN
+F 2 "" H 7250 9150 50  0001 C CNN
+F 3 "" H 7250 9150 50  0001 C CNN
+	1    7250 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 9250 7250 9250
+Wire Wire Line
+	7250 9250 7250 9150
+$Comp
+L OSD3358-POWER:SYS_VDD_1P8V #PWR013
+U 1 1 5D693A9E
+P 7250 7250
+F 0 "#PWR013" H 7250 7100 50  0001 C CNN
+F 1 "SYS_VDD_1P8V" H 7265 7423 50  0000 C CNN
+F 2 "" H 7250 7250 50  0001 C CNN
+F 3 "" H 7250 7250 50  0001 C CNN
+	1    7250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358-POWER:SYS_VDD1_3P3V #PWR011
+U 1 1 5D694933
+P 7250 2950
+F 0 "#PWR011" H 7250 2800 50  0001 C CNN
+F 1 "SYS_VDD1_3P3V" H 7265 3123 50  0000 C CNN
+F 2 "" H 7250 2950 50  0001 C CNN
+F 3 "" H 7250 2950 50  0001 C CNN
+	1    7250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3050 6550 3050
+Wire Wire Line
+	7250 3050 7250 2950
+Wire Wire Line
+	6450 2750 6550 2750
+Wire Wire Line
+	6550 2750 6550 2850
+Wire Wire Line
+	6550 4250 6450 4250
+Wire Wire Line
+	6450 4150 6550 4150
+Connection ~ 6550 4150
+Wire Wire Line
+	6550 4150 6550 4250
+Wire Wire Line
+	6550 4050 6450 4050
+Connection ~ 6550 4050
+Wire Wire Line
+	6550 4050 6550 4150
+Wire Wire Line
+	6450 3950 6550 3950
+Connection ~ 6550 3950
+Wire Wire Line
+	6550 3950 6550 4050
+Wire Wire Line
+	6450 3750 6550 3750
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3750 6550 3950
+Wire Wire Line
+	6450 3650 6550 3650
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3650 6550 3750
+Wire Wire Line
+	6450 3550 6550 3550
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3550 6550 3650
+Wire Wire Line
+	6450 3450 6550 3450
+Connection ~ 6550 3450
+Wire Wire Line
+	6550 3450 6550 3550
+Wire Wire Line
+	6450 2950 6550 2950
+Connection ~ 6550 2950
+Wire Wire Line
+	6550 2950 6550 3050
+Wire Wire Line
+	6450 2850 6550 2850
+Connection ~ 6550 2850
+Wire Wire Line
+	6550 2850 6550 2950
+Connection ~ 6550 3050
+Wire Wire Line
+	6550 3050 6800 3050
+Wire Wire Line
+	6550 3050 6550 3450
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D6C2C1A
+P 6800 3050
+F 0 "TP7" H 6800 3350 50  0000 C CNN
+F 1 "VDD1_3P3V" H 6800 3250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7000 3050 50  0001 C CNN
+F 3 "~" H 7000 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 3050
+Wire Wire Line
+	6800 3050 7250 3050
+$Comp
+L OSD3358-512M-BCB:OSD3358-512M-BCB U1
+U 7 1 5D6D7FCF
+P 11600 7850
+F 0 "U1" H 12600 12917 50  0000 C CNN
+F 1 "OSD3358-512M-BCB" H 12600 12826 50  0000 C CNN
+F 2 "OSD335X-BGA-400" H 11600 7550 50  0001 L BNN
+F 3 "" H 11600 7500 50  0001 L BNN
+	7    11600 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 3150 11300 3150
+Wire Wire Line
+	11300 3150 11300 3250
+Wire Wire Line
+	11300 7650 11400 7650
+Wire Wire Line
+	11300 3250 11400 3250
+Connection ~ 11300 3250
+Wire Wire Line
+	11300 3250 11300 3350
+Wire Wire Line
+	11300 3350 11400 3350
+Wire Wire Line
+	11300 3450 11400 3450
+Wire Wire Line
+	11300 3550 11400 3550
+Wire Wire Line
+	11300 3650 11400 3650
+Wire Wire Line
+	11300 3750 11400 3750
+Wire Wire Line
+	11300 3850 11400 3850
+Wire Wire Line
+	11300 3950 11400 3950
+Wire Wire Line
+	11300 4050 11400 4050
+Wire Wire Line
+	11300 4150 11400 4150
+Wire Wire Line
+	11300 4250 11400 4250
+Wire Wire Line
+	11300 4350 11400 4350
+Wire Wire Line
+	11300 4450 11400 4450
+Wire Wire Line
+	11300 4550 11400 4550
+Wire Wire Line
+	11300 4650 11400 4650
+Wire Wire Line
+	11300 4750 11400 4750
+Wire Wire Line
+	11300 4850 11400 4850
+Wire Wire Line
+	11300 4950 11400 4950
+Wire Wire Line
+	11300 5050 11400 5050
+Wire Wire Line
+	11300 5150 11400 5150
+Wire Wire Line
+	11300 5250 11400 5250
+Wire Wire Line
+	11300 5350 11400 5350
+Wire Wire Line
+	11300 5450 11400 5450
+Wire Wire Line
+	11300 5550 11400 5550
+Wire Wire Line
+	11300 5650 11400 5650
+Wire Wire Line
+	11300 5750 11400 5750
+Wire Wire Line
+	11300 5850 11400 5850
+Wire Wire Line
+	11300 5950 11400 5950
+Wire Wire Line
+	11300 6050 11400 6050
+Wire Wire Line
+	11300 6150 11400 6150
+Wire Wire Line
+	11300 6250 11400 6250
+Wire Wire Line
+	11300 6350 11400 6350
+Wire Wire Line
+	11300 6450 11400 6450
+Wire Wire Line
+	11300 6550 11400 6550
+Wire Wire Line
+	11300 6650 11400 6650
+Wire Wire Line
+	11300 6750 11400 6750
+Wire Wire Line
+	11300 6850 11400 6850
+Wire Wire Line
+	11300 6950 11400 6950
+Wire Wire Line
+	11300 7050 11400 7050
+Wire Wire Line
+	11300 7150 11400 7150
+Wire Wire Line
+	11300 7250 11400 7250
+Wire Wire Line
+	11300 7350 11400 7350
+Wire Wire Line
+	11300 7450 11400 7450
+Wire Wire Line
+	11300 7550 11400 7550
+Connection ~ 11300 3350
+Wire Wire Line
+	11300 3350 11300 3450
+Connection ~ 11300 3450
+Connection ~ 11300 3550
+Connection ~ 11300 3650
+Connection ~ 11300 3750
+Connection ~ 11300 3850
+Connection ~ 11300 3950
+Connection ~ 11300 4050
+Connection ~ 11300 4150
+Connection ~ 11300 4250
+Connection ~ 11300 4350
+Connection ~ 11300 4450
+Connection ~ 11300 4550
+Connection ~ 11300 4650
+Connection ~ 11300 4750
+Connection ~ 11300 4850
+Connection ~ 11300 4950
+Connection ~ 11300 5050
+Connection ~ 11300 5150
+Connection ~ 11300 5250
+Connection ~ 11300 5350
+Connection ~ 11300 5450
+Connection ~ 11300 5550
+Connection ~ 11300 5650
+Connection ~ 11300 5750
+Connection ~ 11300 5850
+Connection ~ 11300 5950
+Connection ~ 11300 6050
+Connection ~ 11300 6150
+Connection ~ 11300 6250
+Connection ~ 11300 6350
+Connection ~ 11300 6450
+Connection ~ 11300 6550
+Connection ~ 11300 6650
+Connection ~ 11300 6750
+Connection ~ 11300 6850
+Connection ~ 11300 6950
+Connection ~ 11300 7050
+Connection ~ 11300 7150
+Connection ~ 11300 7250
+Connection ~ 11300 7350
+Connection ~ 11300 7450
+Connection ~ 11300 7550
+$Comp
+L power:GND #PWR015
+U 1 1 5D6F84B0
+P 11300 8050
+F 0 "#PWR015" H 11300 7800 50  0001 C CNN
+F 1 "GND" H 11305 7877 50  0000 C CNN
+F 2 "" H 11300 8050 50  0001 C CNN
+F 3 "" H 11300 8050 50  0001 C CNN
+	1    11300 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 7650 11300 8050
+Wire Wire Line
+	11300 3450 11300 3550
+Wire Wire Line
+	11300 3550 11300 3650
+Wire Wire Line
+	11300 3650 11300 3750
+Wire Wire Line
+	11300 3750 11300 3850
+Wire Wire Line
+	11300 3850 11300 3950
+Wire Wire Line
+	11300 3950 11300 4050
+Wire Wire Line
+	11300 4050 11300 4150
+Wire Wire Line
+	11300 4150 11300 4250
+Wire Wire Line
+	11300 4250 11300 4350
+Wire Wire Line
+	11300 4350 11300 4450
+Wire Wire Line
+	11300 4450 11300 4550
+Wire Wire Line
+	11300 4550 11300 4650
+Wire Wire Line
+	11300 4650 11300 4750
+Wire Wire Line
+	11300 4750 11300 4850
+Wire Wire Line
+	11300 4850 11300 4950
+Wire Wire Line
+	11300 4950 11300 5050
+Wire Wire Line
+	11300 5050 11300 5150
+Wire Wire Line
+	11300 5150 11300 5250
+Wire Wire Line
+	11300 5250 11300 5350
+Wire Wire Line
+	11300 5350 11300 5450
+Wire Wire Line
+	11300 5450 11300 5550
+Wire Wire Line
+	11300 5550 11300 5650
+Wire Wire Line
+	11300 5650 11300 5750
+Wire Wire Line
+	11300 5750 11300 5850
+Wire Wire Line
+	11300 5850 11300 5950
+Wire Wire Line
+	11300 5950 11300 6050
+Wire Wire Line
+	11300 6050 11300 6150
+Wire Wire Line
+	11300 6150 11300 6250
+Wire Wire Line
+	11300 6250 11300 6350
+Wire Wire Line
+	11300 6350 11300 6450
+Wire Wire Line
+	11300 6450 11300 6550
+Wire Wire Line
+	11300 6550 11300 6650
+Wire Wire Line
+	11300 6650 11300 6750
+Wire Wire Line
+	11300 6750 11300 6850
+Wire Wire Line
+	11300 6850 11300 6950
+Wire Wire Line
+	11300 6950 11300 7050
+Wire Wire Line
+	11300 7050 11300 7150
+Wire Wire Line
+	11300 7150 11300 7250
+Wire Wire Line
+	11300 7250 11300 7350
+Wire Wire Line
+	11300 7350 11300 7450
+Wire Wire Line
+	11300 7450 11300 7550
+Wire Wire Line
+	11300 7550 11300 7650
+Connection ~ 11300 7650
+Wire Wire Line
+	13800 3150 13900 3150
+Wire Wire Line
+	13900 3150 13900 3250
+Wire Wire Line
+	13900 7650 13800 7650
+Wire Wire Line
+	13900 3250 13800 3250
+Connection ~ 13900 3250
+Wire Wire Line
+	13900 3250 13900 3350
+Wire Wire Line
+	13900 3350 13800 3350
+Wire Wire Line
+	13900 3450 13800 3450
+Wire Wire Line
+	13900 3550 13800 3550
+Wire Wire Line
+	13900 3650 13800 3650
+Wire Wire Line
+	13900 3750 13800 3750
+Wire Wire Line
+	13900 3850 13800 3850
+Wire Wire Line
+	13900 3950 13800 3950
+Wire Wire Line
+	13900 4050 13800 4050
+Wire Wire Line
+	13900 4150 13800 4150
+Wire Wire Line
+	13900 4250 13800 4250
+Wire Wire Line
+	13900 4350 13800 4350
+Wire Wire Line
+	13900 4450 13800 4450
+Wire Wire Line
+	13900 4550 13800 4550
+Wire Wire Line
+	13900 4650 13800 4650
+Wire Wire Line
+	13900 4750 13800 4750
+Wire Wire Line
+	13900 4850 13800 4850
+Wire Wire Line
+	13900 4950 13800 4950
+Wire Wire Line
+	13900 5050 13800 5050
+Wire Wire Line
+	13900 5150 13800 5150
+Wire Wire Line
+	13900 5250 13800 5250
+Wire Wire Line
+	13900 5350 13800 5350
+Wire Wire Line
+	13900 5450 13800 5450
+Wire Wire Line
+	13900 5550 13800 5550
+Wire Wire Line
+	13900 5650 13800 5650
+Wire Wire Line
+	13900 5750 13800 5750
+Wire Wire Line
+	13900 5850 13800 5850
+Wire Wire Line
+	13900 5950 13800 5950
+Wire Wire Line
+	13900 6050 13800 6050
+Wire Wire Line
+	13900 6150 13800 6150
+Wire Wire Line
+	13900 6250 13800 6250
+Wire Wire Line
+	13900 6350 13800 6350
+Wire Wire Line
+	13900 6450 13800 6450
+Wire Wire Line
+	13900 6550 13800 6550
+Wire Wire Line
+	13900 6650 13800 6650
+Wire Wire Line
+	13900 6750 13800 6750
+Wire Wire Line
+	13900 6850 13800 6850
+Wire Wire Line
+	13900 6950 13800 6950
+Wire Wire Line
+	13900 7050 13800 7050
+Wire Wire Line
+	13900 7150 13800 7150
+Wire Wire Line
+	13900 7250 13800 7250
+Wire Wire Line
+	13900 7350 13800 7350
+Wire Wire Line
+	13900 7450 13800 7450
+Wire Wire Line
+	13900 7550 13800 7550
+Connection ~ 13900 3350
+Wire Wire Line
+	13900 3350 13900 3450
+Connection ~ 13900 3450
+Connection ~ 13900 3550
+Connection ~ 13900 3650
+Connection ~ 13900 3750
+Connection ~ 13900 3850
+Connection ~ 13900 3950
+Connection ~ 13900 4050
+Connection ~ 13900 4150
+Connection ~ 13900 4250
+Connection ~ 13900 4350
+Connection ~ 13900 4450
+Connection ~ 13900 4550
+Connection ~ 13900 4650
+Connection ~ 13900 4750
+Connection ~ 13900 4850
+Connection ~ 13900 4950
+Connection ~ 13900 5050
+Connection ~ 13900 5150
+Connection ~ 13900 5250
+Connection ~ 13900 5350
+Connection ~ 13900 5450
+Connection ~ 13900 5550
+Connection ~ 13900 5650
+Connection ~ 13900 5750
+Connection ~ 13900 5850
+Connection ~ 13900 5950
+Connection ~ 13900 6050
+Connection ~ 13900 6150
+Connection ~ 13900 6250
+Connection ~ 13900 6350
+Connection ~ 13900 6450
+Connection ~ 13900 6550
+Connection ~ 13900 6650
+Connection ~ 13900 6750
+Connection ~ 13900 6850
+Connection ~ 13900 6950
+Connection ~ 13900 7050
+Connection ~ 13900 7150
+Connection ~ 13900 7250
+Connection ~ 13900 7350
+Connection ~ 13900 7450
+Connection ~ 13900 7550
+$Comp
+L power:GND #PWR016
+U 1 1 5D703640
+P 13900 8050
+F 0 "#PWR016" H 13900 7800 50  0001 C CNN
+F 1 "GND" H 13905 7877 50  0000 C CNN
+F 2 "" H 13900 8050 50  0001 C CNN
+F 3 "" H 13900 8050 50  0001 C CNN
+	1    13900 8050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 7650 13900 8050
+Wire Wire Line
+	13900 3450 13900 3550
+Wire Wire Line
+	13900 3550 13900 3650
+Wire Wire Line
+	13900 3650 13900 3750
+Wire Wire Line
+	13900 3750 13900 3850
+Wire Wire Line
+	13900 3850 13900 3950
+Wire Wire Line
+	13900 3950 13900 4050
+Wire Wire Line
+	13900 4050 13900 4150
+Wire Wire Line
+	13900 4150 13900 4250
+Wire Wire Line
+	13900 4250 13900 4350
+Wire Wire Line
+	13900 4350 13900 4450
+Wire Wire Line
+	13900 4450 13900 4550
+Wire Wire Line
+	13900 4550 13900 4650
+Wire Wire Line
+	13900 4650 13900 4750
+Wire Wire Line
+	13900 4750 13900 4850
+Wire Wire Line
+	13900 4850 13900 4950
+Wire Wire Line
+	13900 4950 13900 5050
+Wire Wire Line
+	13900 5050 13900 5150
+Wire Wire Line
+	13900 5150 13900 5250
+Wire Wire Line
+	13900 5250 13900 5350
+Wire Wire Line
+	13900 5350 13900 5450
+Wire Wire Line
+	13900 5450 13900 5550
+Wire Wire Line
+	13900 5550 13900 5650
+Wire Wire Line
+	13900 5650 13900 5750
+Wire Wire Line
+	13900 5750 13900 5850
+Wire Wire Line
+	13900 5850 13900 5950
+Wire Wire Line
+	13900 5950 13900 6050
+Wire Wire Line
+	13900 6050 13900 6150
+Wire Wire Line
+	13900 6150 13900 6250
+Wire Wire Line
+	13900 6250 13900 6350
+Wire Wire Line
+	13900 6350 13900 6450
+Wire Wire Line
+	13900 6450 13900 6550
+Wire Wire Line
+	13900 6550 13900 6650
+Wire Wire Line
+	13900 6650 13900 6750
+Wire Wire Line
+	13900 6750 13900 6850
+Wire Wire Line
+	13900 6850 13900 6950
+Wire Wire Line
+	13900 6950 13900 7050
+Wire Wire Line
+	13900 7050 13900 7150
+Wire Wire Line
+	13900 7150 13900 7250
+Wire Wire Line
+	13900 7250 13900 7350
+Wire Wire Line
+	13900 7350 13900 7450
+Wire Wire Line
+	13900 7450 13900 7550
+Wire Wire Line
+	13900 7550 13900 7650
+Connection ~ 13900 7650
+$EndSCHEMATC

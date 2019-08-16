@@ -1,0 +1,48 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CGND
+D Power flag, power ground
+K power-flag
+$ENDCMP
+#
+$CMP SYS_RTC_1P8V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD1_3P3V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD2_3P3V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD3_1P8V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP SYS_VDD3_3P3V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP VIN_AC
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP VIN_BAT
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP VIN_USB
+D Power flag
+K power-flag
+$ENDCMP
+#
+#End Doc Library
