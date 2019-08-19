@@ -1120,4 +1120,34 @@ Wire Wire Line
 Wire Wire Line
 	13900 7550 13900 7650
 Connection ~ 13900 7650
+$Comp
+L power:GND #PWR?
+U 1 1 5D5C3E92
+P 1750 4650
+AR Path="/5D5C3E92" Ref="#PWR?"  Part="1" 
+AR Path="/5D5C5718/5D5C3E92" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 4400 50  0001 C CNN
+F 1 "GND" H 1755 4477 50  0000 C CNN
+F 2 "" H 1750 4650 50  0001 C CNN
+F 3 "" H 1750 4650 50  0001 C CNN
+	1    1750 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4650 1750 4650
+Wire Wire Line
+	3650 4650 2350 4650
+Text Label 2800 4650 0    50   ~ 0
+PMIC_NRESET
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5D62B518
+P 2250 4650
+F 0 "JP?" H 2250 4835 50  0000 C CNN
+F 1 "PMIC_NRESET" H 2250 4744 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 4650 50  0001 C CNN
+F 3 "~" H 2250 4650 50  0001 C CNN
+	1    2250 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
